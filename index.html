@@ -1,0 +1,938 @@
+<!DOCTYPE HTML>
+<html>
+<!--=============================================================-->
+<!--                                                             -->
+<!--       Jie Hou		                                         -->
+<!--                                                             -->
+<!--=============================================================-->
+	<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YLLZEBQD9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4YLLZEBQD9');
+  
+</script>
+
+
+    <style>
+
+        .gallery-container {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            background: #f8f8f8;
+        }
+
+        .gallery-wrapper {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            gap: 10px;
+            scrollbar-width: none;
+        }
+
+        .gallery-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gallery-item {
+            min-width: 250px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        /* Navigation Buttons */
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+
+        .nav-btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+</style>
+    
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jie Hou</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="https://cs.slu.edu/~hou/favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="https://cs.slu.edu/~hou/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="https://cs.slu.edu/~hou/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="https://cs.slu.edu/~hou/css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="https://cs.slu.edu/~hou/css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="https://cs.slu.edu/~hou/fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="https://cs.slu.edu/~hou/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cs.slu.edu/~hou/css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="https://cs.slu.edu/~hou/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	<body>
+	<div id="colorlib-page" >
+		<div class="container-wrap">
+		<a href="https://cs.slu.edu/~hou/#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center" >
+				<div class="author-img" style="background-image: url(images/hou_website.png); background-size: 100% auto;"></div>
+				<h1 id="colorlib-logo"><a href="https://cs.slu.edu/~hou/index.html">Jie Hou</a></h1>
+				<span class="title">Associate Professor</span>
+				<span class="title"><a href="https://cs.slu.edu/~hou/">Department of Computer Science</a></span>
+				<span class="title"><a href="https://bcb.slu.edu/">Program of Bioinformatics and Computational Biology</a></span>
+				<span class="position"><a href="http://www.slu.edu/">Saint Louis University</a></span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<!--<li class="active"><a href="https://cs.slu.edu/~hou/#" data-nav-section="about">Home</a></li>-->
+						<li><a href="https://cs.slu.edu/~hou/#" data-nav-section="about">About Me</a></li>
+						<li><a href="https://cs.slu.edu/~hou/#" data-nav-section="Research">Research</a></li>
+						<li><a href="https://cs.slu.edu/~hou/#" data-nav-section="News">News</a></li>
+						<li><a href="https://cs.slu.edu/~hou/#" data-nav-section="Teaching">Teaching</a></li>
+						<li><a href="https://cs.slu.edu/~hou/#" data-nav-section="People">People</a></li>
+						<li><a href="https://cs.slu.edu/~hou/#" data-nav-section="Publication">Publication</a></li>
+						<li><a href="https://cs.slu.edu/~hou/#" data-nav-section="contact">Contact</a></li>
+						<!--<li><a href="https://cs.slu.edu/~hou/#" data-nav-section="contact">Gallery</a></li>-->
+					</ul>
+				</div>
+        <div class="author-img" style="background-image: url(images/SLU_Logo.png);background-size: 80% 80%;"></div>
+			</nav>
+
+			<div class="colorlib-footer">
+				<ul>
+					<li><a href="https://cs.slu.edu/~hou/#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="https://cs.slu.edu/~hou/#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="https://cs.slu.edu/~hou/#"><i class="icon-instagram"></i></a></li>
+					<li><a href="https://cs.slu.edu/~hou/#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main"  >
+   
+   
+			<section class="colorlib-about" data-section="about" data-section="home">
+			
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+									<!--<h2 class="colorlib-heading"><img src="images/JieHou.JPG" alt="Screen Shot 2022-06-22 at 9.33.28 AM.png" width="313" height="192" /></h2>-->
+									
+										<!--<span class="heading-meta">About Me</span>-->
+										<h2 class="colorlib-heading">About Me</h2>
+			<div class="author-img" style="background-image: url(images/hou_website.png);"></div>
+			
+										<p style="color:black;font-size:120%;text-align:justify">I am an associate professor in the <a href="https://cs.slu.edu/"  target="_blank">Department of Computer Science</a> at <a href="http://www.slu.edu/" target="_blank">Saint Louis University</a>, with a secondary appointment in  <a href="https://www.slu.edu/medicine/health-and-clinical-outcomes-research/index.php"  target="_blank">Department of Health and Clinical Outcomes Research (HCOR)</a> in School of Medicine. I received my M.A. in Statistics in 2014, and a Ph.D. in Computer Science in 2019 from the University of Missouri-Columbia. 
+                    <br>The research in my lab focuses on developing data-driven computational methods (particularly machine learning, deep learning, and computational optimization methods) to address the fundamental problems in biological sciences, including protein/RNA structure prediction, molecular interactions (i.e., protein-protein complex, protein-RNA contacts) and quality assessment of molecular structure predictions. We are also actively participating in collaborative projects in healthcare, privacy-preserving ML, and omics data analysis. <a href="https://scholar.google.com/citations?user=RsC9b_wAAAAJ&hl=en" target="_blank"><b><u>@Google Scholar</u></b></a> /<a href="./cv/CV_July2025.pdf" target="_blank"> <b><u>@Curriculum Vitae</u></b></a> </p> <!--In addition, we are also interested in omics data analysis (i.e., RNA-seq/scRNA-seq transcriptomics and genomics). -->
+                    <br> 
+
+
+
+
+									</div>
+								</div>
+							</div>
+							
+							
+							
+							<h2 class="colorlib-heading">Research Interests</h2>
+							
+							<div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+									  <p style="color:black;font-size:100%;text-align:left">Protein/RNA Structure Prediction</p>
+                    
+                    <a href="https://cs.slu.edu/~hou/#protein_structure_prediction">Read More</a>
+									</div>
+								</div>
+        
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+									  <p style="color:black;font-size:100%;text-align:left">Protein Quality Assessment</p>
+                    
+                    <a href="https://cs.slu.edu/~hou/#protein_quality_assessment">Read More</a>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+									  <p style="color:black;font-size:100%;text-align:left">Omics data analysis & Deep Learning <br></p>
+                    
+                    <a href="https://cs.slu.edu/~hou/#omics_data_analysis">Read More</a>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+									  <p style="color:black;font-size:100%;text-align:left">Privacy-Preserving Machine Learning</p>
+                    
+                    <a href="https://cs.slu.edu/~hou/#privacy_ML">Read More</a>
+                    
+									</div>
+								</div>
+					
+							</div>
+							
+					<hr>
+					
+					<h2 class="colorlib-heading">Selected Education Activities</h2>
+					<p style="color:black;font-size:120%;text-align:justify">I am also dedicated to advancing AI in education (AI4Ed) by integrating innovative technologies such as <a href='https://processfeedback.org/' target='_blank'>ProcessFeedback</a> and AI-driven tools (LLMs) into computational learning. I enjoy exploring diverse approaches that enhance student engagement and promote interactive learning in both classrooms and research training. My work spans undergraduate/graduate AI research initiatives, innovative teaching methodologies, and contributions to major bioinformatics and CS education conferences.</p>
+                    <br> 
+                    
+                    <!--Through funded research and hands-on tutorials at education conference (see <a href='https://dl.acm.org/doi/abs/10.1145/3641555.3704753' target='_blank'><u>Full Paper</u></a> | <a href='https://badriadhikari.github.io/pf-online-compiler-workshop/' target='_blank'><u>workshop materials</u></a> for ACM-SIGCSE), -->
+
+					<table border="0" style="height: 5px; width: 100%; border-collapse: collapse; color: black;">
+						<colgroup>
+							<col style="width: 95%;"> <!-- Column 1 - 2/3 of the table (approximated) -->
+							<col style="width: 5%;"> <!-- Column 2 - 1/3 of the table -->
+						</colgroup>
+						
+						<tr>
+							<td
+								<h4>1. Tutorial on AI in Education (AI4Ed) on ACM-SIGCSE 2025
+								<div style="margin-left: 40px;">
+								Adhikari, Badri, and Jie Hou. "Teaching Coding in the Age of AI: A Hands-on Tutorial on Process Feedback." Proceedings of the 56th ACM Technical Symposium on Computer Science Education V. 2. 2025.</h4></h4>
+								
+								<h5>see <a href='https://dl.acm.org/doi/abs/10.1145/3641555.3704753' target='_blank'><u>Full Paper</u></a> | <a href='https://badriadhikari.github.io/pf-online-compiler-workshop/' target='_blank'><u>Workshop Materials</u></a>
+								<br>
+								<img src='./images/sigcse.png' alt="sigcse" style="width:80%; height:auto;">
+								<br>
+								<br>Acknowledgement: Dr. Badri Adhikari, founder of ProcessFeedback, at University of Missouri-St. Louis
+								</div>
+							</td>
+							<td>
+								
+							</td>
+						</tr>
+						
+						<tr>
+							<td
+								<h4>2. Student Engagement Strategies Panel: SLU representative at Focus on Teaching and Technology Conference (FTTC) 2024
+ 								<div style="margin-left: 40px;">
+ 								Topic: "Enhance Engagement and Learning: Integrating ProcessFeedback in Classroom"</h4></h4>
+							
+								<img src='./images/fttc_2.png' alt="fttc_2" style="width:60%; height:auto;">
+								</div>
+								
+							</td>
+						</tr>
+					</table>	
+					
+					
+							
+					<br>
+					<h2 class="colorlib-heading">Honors and Awards</h2>
+								
+					<table border="0" style="height: 5px; width: 100%; border-collapse: collapse; color: black;">
+						<colgroup>
+							<col style="width: 80%;"> <!-- Column 1 - 2/3 of the table (approximated) -->
+							<col style="width: 20%;"> <!-- Column 2 - 1/3 of the table -->
+						</colgroup>
+						
+						<tr>
+							<td
+								<h4>1. 2024,  School of Science & Engineering Faculty and Staff Excellence in Teaching Award, Saint Louis University</h4>
+						
+							</td>
+							
+						</tr>
+						
+						<tr>
+							<td
+								<h4>2. 2019,  Outstanding PhD Student Award in the College of Engineering, University of Missouri</h4>
+							</td>
+							
+						</tr>
+					</table>	
+					
+						</br>
+					<h2 class="colorlib-heading">Active/Completed Grants</h2>
+							
+							
+					<table border="0" style="height: 5px; width: 100%; border-collapse: collapse; color: black;">
+						<colgroup>
+							<col style="width: 80%;"> <!-- Column 1 - 2/3 of the table (approximated) -->
+							<col style="width: 20%;"> <!-- Column 2 - 1/3 of the table -->
+						</colgroup>
+						
+						<tr>
+							<td
+								<h4>1. NIH/NIGMS, R15 (Active, Principal-Investigator), “Improving Artificial Intelligence Readiness of RNA Motif Data for Structure Analysis and Modeling,” 09/2024 – 08/2027. Project Number: <a href="https://reporter.nih.gov/search/zvUKGxxYiE-pvu_ZoL72_g/project-details/10974883", target="_blank">1R15GM155891-01 </a></h4></h4>
+								<div style="margin-left: 40px;">
+									<h5><u>Major Goals</u>: Our goal is to enhance computational RNA structural analysis by integrating artificial intelligence (AI) and developing a comprehensive RNA data generation framework tailored for AI applications.
+								</div>
+							</td>
+							<td>
+								<img src='./images/nigms.jpeg' alt="nhlbi" style="width:60%; height:auto;">
+							</td>
+							
+						</tr>
+						
+						
+						<tr>
+							<td
+								<h4>2. NIH/NIGMS, R15 (Active, co-Investigator), “Understanding the Thermodynamics and Structure of RNA Secondary Structure Motifs,” 07/2025 – 06/2028. (PI: Dr. Brent Znosko, SLU-Chemistry). Project Number: <a href="https://reporter.nih.gov/search/LX7hyZif-EKCt8G8zMpqiQ/project-details/11125115", target="_blank">2R15GM085699-05</a></h4></h4>
+								<div style="margin-left: 40px;">
+									<h5><u>Major Goals</u>: The project aims to improve RNA secondary and 3D structure prediction by deriving updated thermodynamic parameters for common and modified RNA motifs and enhancing computational tools for structural analysis.
+									<h5><u>Scope of work</u>: Major role in developing bioinformatics algorithms to identify structural patterns in previously solved RNA 3D structures to improve 3D structure prediction.
+									<h5>&nbsp;</h5>
+								</div>
+							</td>
+							<td>
+								<img src='./images/nigms.jpeg' alt="nhlbi" style="width:60%; height:auto;">
+							</td>
+							
+						</tr>
+						
+						<tr>
+							<td
+								<h4>3. NIH/NHLBI, R01 (Active, co-Investigator), “Pharmacogenetic Refinement of the Warfarin Dose Using Machine Learning,” 07/2024 – 06/2028. (PI: Dr. Gage Brian at School of Medicine, WUSTL). Project Number: <a href="https://reporter.nih.gov/search/tB5fVTNOX0O88IYMmgDqmw/project-details/10862482", target="_blank">1R01HL173734-01</a></h4>
+								<div style="margin-left: 40px;">
+									<h5><u>Major Goals</u>: Our goal is to improve the safety and effectiveness of anticoagulant therapy.  We will use penalized regression and machine learning to develop algorithms to guide warfarin dosing. To facilitate use of the algorithms, we will integrate them into a popular electronic health record (Epic) and make them publicly available at our non-profit web application, www.WarfarinDosing.org
+									<h5><u>Scope of work</u>: Major role in developing advanced machine learning framework to quantify the warfarin dose-response relationship in long-term period; Algorithm validation and deployment via their electronic medical record, Epic.</h5>
+									<h5>&nbsp;</h5>
+									<!--<h5><u>Efforts</u>: 1. Weekly meeting for progress update. 2. Two summer months commitment per year in research activities. 3. Student supervision in academic terms.</h5>-->
+								</div>
+							</td>
+							<td>
+								<img src='./images/nhlbi.jpg' alt="nhlbi" style="width:65%; height:auto;">
+							</td>
+						</tr>
+						
+						<tr>
+							<td
+								<h4>4. NSF (Active, co-PI), “CC* Compute-Campus: Modernizing Campus Cyberinfrastructure for AI-Enhanced Research and Education (ModernCARE),” 11/2024 – 10/2026. (PI: Ted Ahn at SLU-CS). Project Number: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2430236&HistoricalAwards=false", target="_blank">2430236 </a> </h4>
+								<div style="margin-left: 40px;">
+									<h5><u>Major Goals</u>: This project aims to enhance SLU's campus computing infrastructure equipment (a brand-new, small-scale, university-wide, GPU-based cluster) to support advanced AI-driven research and educational activities that will benefit our faculty, students, and broader scientific community.
+									<h5><u>Scope of work</u>: Dr. Hou will support HPC training workshops and seminars, lead the sub-session for the bioinformatics and AI, and validate the new system on the AI-driven molecular structure prediction. Dr. Hou will also incorporate this environment in the development of new machine learning and bioinformatics courses.</h5>
+								</div>
+							</td>
+							<td>
+								<img src='./images/NSF-Symbol.png' alt="nhlbi" style="width:70%; height:auto;">
+							</td>
+							
+						</tr>
+						<tr>
+							<td
+								<h4>5. SLU Scholarly Undergraduate Research Grants and Experiences (SURGE) Program</h4>
+								<div style="margin-left: 40px;">
+									<h5>a. (PI, Active) “AI agent for automated RNA motif analysis using open-source large language models (LLMs),” 08/2025 – 06/2026. <u>Job Details</u>: <a href="https://slu.joinhandshake.com/jobs/9741688/share_preview", target="_blank">https://slu.joinhandshake.com/jobs/9741688/share_preview </a></h5>
+									<h5>b. (PI, Completed) “Automated RNA Motif Structure Parsing Framework for AI/ML applications,” 08/2024 – 12/2024</h5>
+									<h5>c. (PI, Completed) “Computational algorithms for binding affinity between antibodies and antigens,” 05/2023 – 09/2023</h5>
+								</div>
+
+							</td>
+							<td>
+								<img src='./images/slu_research.jpeg' alt="slu" style="width:60%; height:auto;">
+							</td>
+						</tr>
+						<tr>
+							<td
+								<h4>6. SLU Foundational Interdisciplinary Research Experience (FIRE) grant</h4>
+								<div style="margin-left: 40px;">
+									<h5>a. (PI, active) “Advancing RNA Motif Structural Analysis with a Fully Automated AI Agent,” 01/2025 – 12/2026</h5>
+									<img src='./images/FIRE1.png' alt="FIRE1" style="width:40%; height:auto;">
+									<h5>Check out our work in 2025 SSE Undergraduate Student Showcase: <a href="./images/AutoRNA_poster.pdf" target="_blank"> <b><u>@AutoRNA</u></b></a>  </h5>
+								</div>
+							</td>
+							<td>
+								<img src='./images/slu_research.jpeg' alt="slu" style="width:60%; height:auto;">
+							</td>
+						</tr>
+					</table>	
+								
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			</br>
+			<section class="colorlib-services" data-section="Research">
+				<div class="colorlib-narrow-content">
+
+
+						<div class="col-md-12 col-md-offset-8 col-md-pull-8 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">Research</h2>
+							   <h4>Complete List of Published Work in <a target=�_blank� href="https://www.ncbi.nlm.nih.gov/myncbi/1JIwccmNQ5ygeJ/bibliography/public/">MyBibliography</a>: Publication total = 57; H-index = 24 (=22 since 2019),<a target=�_blank� href="https://scholar.google.com/citations?user=RsC9b_wAAAAJ&hl=en"><b><u>@Google Scholar</u></b></a>
+							   </h4>	
+						</div>
+
+					<div class="row row-pt-md" ">
+						<div class="col-md-12 text-center animate-box">
+							<div class="services color-1" style="background-color: rgba(255, 255, 255, 0.7);">
+								<div class="desc">
+									<h3><a name="protein_structure_prediction">Data-assisted protein/RNA structure prediction</a></h3>
+									<p style="color:black;font-size:120%;text-align:justify">Data-restrained structural modeling based on experimental information has attracted new attention. Solutions to such problems are still under development. The use of experimental restraints, such as cross-linking/mass spectrometry, small-angle x-ray scattering (SAXS) and single-particle cryo-electron microscopy (cryo-EM) have emerged and are considered a promising direction in structural modeling improvement. 
+									<br>My research interest focuses on developing computational methods (i.e. deep learning, machine learning, optimization techniques) to determine the optimal ways to fully leverage the experimental information from SAXS/Cryo-EM in protein/RNA structure modeling.</p>
+									 <div style="text-align:left">
+                      <ul>    
+                      <li>Chen, J., Zia, A., <b>Hou, J.</b>, Wang, F., Cao, R., & Si, D. (2023). Protein Structure Refinement via DeepTracer and AlphaFold2. bioRxiv, 2023-08. (accepted in Briefings in Bioinformatics)<a href="https://www.biorxiv.org/content/10.1101/2023.08.16.553616v1.abstract">(Link)</a></li>         
+                      <li>Nakamura, A., Meng, H., Zhao, M., Wang, F., <b>Hou, J.</b>, Cao, R., & Si, D. (2023). Fast and automated protein-DNA/RNA macromolecular complex modeling from cryo-EM maps. Briefings in Bioinformatics, 24(2), bbac632.<a href="https://academic.oup.com/bib/article/24/2/bbac632/6995410">(Link)</a></li>  
+                      <li>Si, D., Nakamura, A., Tang, R., Guan, H., <b>Hou, J.</b>, Firozi, A., ... & Zhao, M. (2022). Artificial intelligence advances for de novo molecular structure modeling in cryo‐electron microscopy. Wiley Interdisciplinary Reviews: Computational Molecular Science, 12(2), e1542. <a href="https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcms.1542">(Link)</a></li>
+                      <li><b>Hou, J.</b>, Adhikari, B., Tanner, J. J., & Cheng, J. (2020). SAXSDom: Modeling multidomain protein structures using small-angle X-ray scattering data. Proteins: Structure, Function, and Bioinformatics, 88(6), 775-787. PMID: 31860156<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.25865">(Link)</a></li>                  
+                      <li><b>Hou, J.</b>, Wu, T., Cao, R., & Cheng, J. (2019). Protein tertiary structure modeling driven by deep learning and contact distance prediction in CASP13. Proteins: Structure, Function, and Bioinformatics, 87(12), 1165-1178. PMID: 30985027 <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25697">(Link)</a></li>
+                      </ul>
+                  </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 text-center animate-box">
+							<div class="services color-1" style="background-color: rgba(255, 255, 255, 0.7);">
+								<div class="desc">
+									<h3><a name="protein_quality_assessment">Protein Quality Prediction using Deep Learning</a></h3>
+                                                       
+                  <p style="color:black;font-size:120%;text-align:justify">Protein quality assessment (QA) plays an important role in protein structure prediction, which evaluates the quality of a protein model without knowing its true structure. My research interest focuses on developing deep-learning based model QA methods to explore potential solutions for improving the accuracy of model quality assessment, incuding integrating multiple QA methods and residue-residue contact/distance predictions. </p>
+                  <div style="text-align:left">
+                      <ul>                         
+                      <li>Zhang, L., Wang, S., <b>Hou, J.</b>, Si, D., Zhu, J., & Cao, R. (2023). ComplexQA: A deep graph learning approach for protein complex structure assessment. Briefings in Bioinformatics, 24(6), bbad287.<a href="https://academic.oup.com/bib/article/24/6/bbad287/7334440">(Link)</a></li>
+                      <li>Rahbar, M., Chauhan, R. K., Shah, P. N., Cao, R., Si, D., & Hou, J. (2022, August). Deep graph learning to estimate protein model quality using structural constraints from multiple sequence alignments. In Proceedings of the 13th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics (pp. 1-10). <a href="https://dl.acm.org/doi/abs/10.1145/3535508.3545558">(Link)</a></li>
+                      <li><b>Hou, J.</b>, Wu, T., Cao, R., & Cheng, J. (2019). Protein tertiary structure modeling driven by deep learning and contact distance prediction in CASP13. Proteins: Structure, Function, and Bioinformatics, 87(12), 1165-1178. PMID: 30985027 <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25697">(Link)</a></li>
+                      <li>Cheng, J., Choe, M. H., Elofsson, A., Han, K. S.,<b>Hou, J.</b>, Maghrabi, A. H., ... & Studer, G. (2019). Estimation of model accuracy in CASP13. Proteins: Structure, Function, and Bioinformatics, 87(12), 1361-1377.<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25767">(Link)</a></li>
+                      </ul>
+                  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+
+			<section class="colorlib-services" data-section="News">
+				<div class="colorlib-narrow-content">
+
+						<div class="col-md-3 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">News</h2>
+						</div>
+
+					<div class="row row-pt-md" ">
+						<div class="col-md-12 text-center animate-box">
+							<div class="services color-1" style="background-color: rgba(255, 255, 255, 1);">
+								<div class="desc" style="text-align:left">
+									  <ul>  
+									  <li>07/2025. <u>Research Funding</u>: Dr. Hou (co-I) received a three-year grant from the National Institute of Health (NIH/NIGMS) for project titled "Understanding the Thermodynamics and Structure of RNA Secondary Structure Motifs". (Project Number: <a href="https://reporter.nih.gov/search/LX7hyZif-EKCt8G8zMpqiQ/project-details/11125115", target="_blank">2R15GM085699-05</a>)</li>
+									  <li>05/2025. <u>Professional development</u>: Dr. Jie Hou has been promoted to the rank of Associate Professor with tenure, effective July 1, 2025.</li>
+									  <!--<li>03/2025. <u>Research Abstract</u>: Our warfarin work of 'Improving Warfarin Therapy Safety with Accurate International Normalized Ratio (INR) Prediction Algorithms' was accepted in 2025 33rd Congress of the International Society on Thrombosis and Haemostasis (ISTH) <a href="./images/ISTH.png" target="_blank"> <b><u>Acceptance Email</u></b></a> </li>-->
+									  <li>03/2025. <u>Research Funding</u>: Dr. Hou (PI) received an one-year grant from SLU Scholarly Undergraduate Research Grants and Experiences (SURGE) to develop AI-agent and LLMs for automated RNA structural analysis and modeling (See <a href="https://slu.joinhandshake.com/jobs/9741688/share_preview", target="_blank"><u>Fund Details</u></a>)</li>
+									  <li>02/2025. <u>Education Publication</u>: Honored to be co-authored in ACM-SIGCSE 2025 (largest conference for CS education) tutorial session “Teaching Coding in the Age of AI”. See (See <a href="https://dl.acm.org/doi/abs/10.1145/3641555.3704753", target="_blank"><u>Full Paper</u></a> and <a href="https://badriadhikari.github.io/pf-online-compiler-workshop/", target="_blank"><u>Workshop materials</u></a>)</li>
+									  <li>01/2025. <u>Research Funding</u>: Dr. Hou (PI) received a 6-semester grant from SLU Foundational Interdisciplinary Research Experience (FIRE) program to involve undergraduate students in research of developing AI agent for automated RNA structural analysis with large language model.</li>
+									  <li>11/2024. <u>Research Funding</u>: Dr. Hou (co-PI) received a two-year grant from the National Science Foundation (NSF) for project titled "CC* Compute-Campus: Modernizing Campus Cyberinfrastructure for AI-Enhanced Research and Education (ModernCARE)". (Project Number: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2430236&HistoricalAwards=false", target="_blank">2430236 </a>)</li>
+									  <li>09/2024. <u>Research Funding</u>: Dr. Hou (PI) received a three-year grant from the National Institute of Health (NIH/NIGMS) for project titled "Improving Artificial Intelligence Readiness of RNA Motif Data for Structure Analysis and Modeling". (Project Number: <a href="https://reporter.nih.gov/search/zvUKGxxYiE-pvu_ZoL72_g/project-details/10974883", target="_blank">1R15GM155891-01 </a>)</li>
+									  <li>08/2024. <u>Conference Paper</u>: Our research paper, titled 'Exploring the efficiency of deep graph neural networks for rna secondary structure prediction' is accepted for oral presentation in International Conference on Intelligent Biology and Medicine (ICIBM 2024), and recommended for journal submission. Congratulations to the team. </li>
+									  <li>07/2024. <u>Research Funding</u>: Dr. Hou (co-I) received a subaward for a four-year NIH-R01 grant from the National Institute of Health (NIH/NHLBI) to develop machine learning methods for Pharmacogenetic Refinement of the Warfarin Dose. PI: Dr. Gage Brian at WUSTL. (Project Number: <a href="https://reporter.nih.gov/search/tB5fVTNOX0O88IYMmgDqmw/project-details/10862482" , target="_blank">1R01HL173734-01</a>)</li>
+									  <li>06/2024. <u>Research Funding</u>: Dr. Hou received funds from the SLU Scholarly Undergraduate Research Grants and Experiences (SURGE) Program to support one undergraduate student to work on RNA structure analysis in Academic Year 2024-2025</li>
+									  <li>05/2024. <u>College Award</u>: Dr. Hou received the <u>SSE Faculty and Staff Excellence in Teaching Award</u> in the School of Science and Engineering (SSE) at SLU! </li>
+									  <li>05/2024. <u>Research Appointment</u>: Dr. Hou accepted a secondary appointment in Department of Health and Clinical Outcomes Research (HCOR) in School of Medicine at SLU! </li>
+									  <li>03/2024. <u>Student Supervision</u>: Congratulations to my student, Omkar Datta Sowri Vullaganti, got accepted to Student Research Experience Program at <a href="https://midwestresearchcomputing.org/programs/student-experience/">Midwest Research Computing and Data Consortium</a> and received travel support & stipend! </li>
+									  <li>03/2024. <u>Student Supervision</u>: Congratulations to my student, Vinay Chaudhari, got accepted to Student Research Experience Program at <a href="https://midwestresearchcomputing.org/programs/student-experience/">Midwest Research Computing and Data Consortium</a> and received travel support & stipend! </li>
+									  <li>03/2024. <u>Student Supervision</u>: Vinay Chaudhari joined our lab as graduate research assistant. Welcome! </li>
+									  <li>02/2024. <u>Student Supervision</u>: Congratulations to my graduate student (SLU BCB program), Charlz Nithin Jerold, for officially accepting a full-time job offer to be a Bioinformatics Research Analyst at Washington University at St. Louis.</li>
+									  <li>11/8/2023. <u>Research Presentation</u>: Dr. Hou gave a talk in Barnes-Jewish Hospital, Saint Louis for topic of ”Machine Learning applications in healthcare” (Guest lecture)</li>  
+									  <li>11/07/2023. <u>Student Supervision</u>: BCB student student: Abdur Rahman Syed Ali joined our lab. Welcome! </li>  
+									  <li>10/13/2023. <u>Research Presentation</u>: Dr. Hou gave a talk in 2023 AI for Medicine conference for topic of ”AI and big data analytics in healthcare data”</li>                
+									  <li>09/20/2023. <u>Research Presentation</u>: Dr. Hou gave a talk in 2023 SLU Computer Science Colloquium for topic of ”The applications of deep learning techniques in protein structure prediction”</li>              
+									  <li>08/09/2023. <u>Research Presentation</u>: Dr. Hou gave a talk in 2023 SIGKDD conference, BioKDD workshop to present the full paper about our recent work focusing on ”AnglesRefine: refinement of 3D protein structures using Transformer based on torsion angles”, in Long Beach</li>
+									  <li>08/2023. <u>University Service</u>:  Dr. Hou started to serve as  Curriculum Committee Chair of SLU School of Science and Engineering (SSE)</li>
+									  <li>03/2023: <u>Conference Service</u>: Dr. Hou started to serve as workshop co-chair of <a href="https://biokdd.org/biokdd23/committee.html">BioKDD 2023 workshop</a> </li>
+									  <li>8/2022. <u>Student Presentation</u>: Mahdi presented the full paper about our recent work focusing on 'deep graph learning approach in ranking protein structure prediction' was accepted in ACM-BCB 2022 </li>
+									  <li>7/11/2022. <u>Poster Presentation</u>: Dr. Hou presented the poster about our recent work focusing on 'deep learning approach in ranking protein-protein complex' in ISMB 2022</li>
+									  <li>6/2022. <u>Research Paper</u>: Our full paper titled 'Deep graph learning to estimate protein model quality using structural constraints from multiple sequence alignments' has been accepted to ACM-BCB 2022 </li>
+									  <li>6/2022. <u>Research Abstract</u>: Our abstract of 'deep learning approach in ranking protein-protein complex' was accepted in 2022 International Conference on Intelligent Systems for Molecular Biology (ISMB) </li>
+									  <li>5/2022. <u>Research Funding</u>: Dr. Hou received a research grant from Saint Louis University (PRF) to conduct the privacy analysis of distributed learning with defensive Measure(Co-PI role, 5/2022–04/2023) </li>
+									  <li>4/29/2022. <u>University Service</u>:  Dr. Hou served as Judge in SLU GSA Research Symposium </li>
+									  <li>4/1/2022. <u>University Service</u>:  Dr. Hou served as Moderator in SLU Sigma Xi Symposium </li>
+									  <li>12/2021. <u>Research Funding</u>: Dr. Hou received a research grant from WUSTL (ICTS/CTRFP) to develop machine learning algorithms for Pharmacogenetic Refinement of Warfarin Dose (Co-PI role, 3/2022–02/2023) </li>
+									  <li>3/2021. <u>Research Funding</u>: Dr. Hou received a research grant from Saint Louis University (PRF) to develop deep learning algorithms for protein structure prediction (PI role, 5/2021–11/2022) </li>
+									  <li>9/2019. The Hou lab started at SLU CS department and BCB program</li>
+									  <!--<li>12/2018. Hou's protein quality assessment approach was ranked no.1 in ranking protein strucstural models in the 13th world-wide CASP competitions</li>-->
+									  </ul>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</section>		
+			
+			
+			<section id="colorlib-services" data-section="Teaching" >
+				<div class="colorlib-narrow-content">
+
+						<div class="col-md-3 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">Teaching</h2>
+						</div>
+
+						<div class="row row-pt-md" ">
+								<div class="services color-1" style="background-color: rgba(255, 255, 255, 0.7);">
+										<div style="text-align:left">
+											<ul>
+													<li><b><u>BCB 5930</u>: Advanced Machine Learning for Bioinformatics</b>(<b>Spring 2025</b>)</li>
+													<li><b><u>BCB 5300</u>: Algorithms in Computational Biology</b>(<b>Fall 2021/2022/2023/2024</b>)</li>
+													<li><b><u>CSCI 1020</u>: Introduction to Computer Science: Bioinformatics</b>(<b>Fall 2019/2020, Spring 2020/2021</b>)</li>
+													<li><b><u>CSCI 4750/5750</u>: Machine Learning</b>(<b>Spring 2020/2023/2024/2025, Fall 2020/2021/2022/2023/2024 </b>)</li>
+											</ul>
+										</div>
+								</div>
+
+						</div>
+
+
+				</div>
+			</section>
+
+    	  <section class="colorlib-services" data-section="People">
+			<div class="colorlib-narrow-content">
+						<div class="row">
+								<h2 class="colorlib-heading">People</h2>
+						</div>
+               
+
+
+							<div class="col-md-12 text-center animate-box">
+								<div class="services color-1" style="background-color: rgba(255, 255, 255, 0.7);">
+									<div class="desc">
+										<div style="text-align:left">
+											  <h4><b>Current Graduate Students</b> </h4>
+												<div><font face="" size="3">
+															<li>Lakshmi Prasanna Mamillapalli (FL 2024 - Present, SLU CS)</li>
+															<li>Shrugna Varma Subburi (FL 2024 - Present, SLU BCB)</li>
+															<li>Vinay Chaudhari (FL 2023 - Present, SLU CS)</li>
+															<li>Abdur Rahman Syed Ali (FL 2023 - Present, SLU BCB)</li>
+															<li>Nexhi Sula (Female), MS-AI SLU (SP 2023 - Present), will start PhD student in Fall 2024</li>
+												</font></div>               
+
+												<br/>
+													<h4><b>Current Undergraduate Students</b></h4>
+		
+														<div><font face="" size="3">
+															 <li> Ibrahim Khan (FL2024 - Present, Biology, Freshman)</li>
+															 <li> Ramez Mosad (FL2024 - Present, Computer Science, Senior)</li>
+															
+															 
+												</font></div>             
+
+												<br/>
+													<h4><b>Current High-school Students</b></h4>
+		
+														<div><font face="" size="3">
+															 <li>Jerry Yu (May 2024 - Present), Piedmont High School in California. Research interests: Computer Science, Machine Learning in Healthcare</li>
+															 <li>Grace Fu (Oct 2023 - Present), 11-th Grade, Parkway South School in St. Louis. Research interests: Computer Science, Machine Learning in Healthcare</li>
+															 
+												</font></div>               
+        
+				
+												 <br/>
+											  <h4><b>Former Students</b> </h4>
+												<div><font face="" size="3">
+															<li>Charlz Nithin Jerold (FL 2022 - SP 2024, SLU BCB). Currently full-time Bioinformatics Research Analyst at Washington University at St. Louis</li>
+															<li>Prerna Ashok Bachwani (FL 2023 - SP 2024, SLU BCB). Currently full-time Bioinformatics Research Analyst at Washington University at St. Louis</li>
+														    <li>Bhanuteja Pujari (FL2021 - SP2024, Neuroscience, Psychology/Biology, Computer Science). Currently at SLU Medical School (SOM) as graduate student</li>
+															<li>Indira Vats (2022 - 2023, Female, Computer Science undergraduate, currently MScAC-AI Student @ University of Toronto)</li>
+															<li>Daniel Mao (2022 - 2023, Computer Science undergraduate, currently Software Developer @ SLU)</li>
+															<li>Harshitha Badeti (2022 - 2023, SLU CS)</li>
+															<li>Vijay Varshini Lakshmi Narayanan (2022 - 2023, SLU CS/AI)</li>
+															<li>Mahdi Rahbar (2021 - 2023, SLU CS/AI)</li>
+															<li>Noor Al-Hammadi (PhD), co-supervisor (2022, Statistician in research lab at WUSTL, Assistant Professor at SLU)</li>
+															<li>Aasritha Nallapu (2022, bioinformaticist in research lab at WUSTL)</li>
+															<li>Yu Zhang (2021 - 2022, bioinformaticist in research lab at WUSTL)</li>
+															<li>Pankil Shah (2021 - 2022, graduate student at SLU Computer Science)</li>
+															<li>Rahul Chauhan (2019 - 2021, Software Development Engineer II at GoDaddy Inc.)</li>
+															<li>Ammaar Firozi (2020- 2021, Computer Science Department & Department of Biology)</li>
+															<li>Simi Doshi (2020 - 2021, Public Health & Social Justice)</li>
+															<li>Ciri Chandana Pocha (2020 - 2021, Neuroscience, Psychology/Biology, Computer Science)</li>
+											</font></div>               
+
+											<br/>
+				
+										  <h4><b>Former High-school Students</b> </h4>
+											<div><font face="" size="3">
+														<li>Gabriel Schwarz (2022 summer)</li>
+														<li>Ian Hou (May 2023 - Spring 2024). The John Cooper School, Texas</li>
+													</font></div>               
+
+											<br/>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						
+										
+
+  			    
+				</div>
+			</section>
+			<section class="colorlib-skills" data-section="Publication">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+							<h2 class="colorlib-heading">Publication</h2>
+					</div>
+					<div class="row">
+               <h4>Complete List of Published Work in <a target=�_blank� href="https://www.ncbi.nlm.nih.gov/myncbi/1JIwccmNQ5ygeJ/bibliography/public/">MyBibliography</a>: Publication total = 57; H-index = 24 (=22 since 2019) </h4>
+						<h4><a target=�_blank� href="https://scholar.google.com/citations?user=RsC9b_wAAAAJ&hl=en"><b><u>@Google Scholar</u></b></a></h4>
+						<ol reversed>
+
+<br>
+<h4><b>Protein Structure/Contact/Function Prediction</b></h4>
+<hr>
+<li>Nakamura, A., Meng, H., Zhao, M., Wang, F., <u>Hou, J.</u>, Cao, R., & Si, D. (2023). Fast and automated protein-DNA/RNA macromolecular complex modeling from cryo-EM maps. Briefings in Bioinformatics, 24(2), bbac632.</li>
+<li>Zhang, L., Zhu, J., Wang, S., <u>Hou, J.</u>, Si, D., & Cao, R. (2023). AnglesRefine: refinement of 3D protein structures using Transformer based on torsion angles. bioRxiv, 2023-07.</li>
+<li>Chen, J., Zia, A., <u>Hou, J.</u>, Wang, F., Cao, R., & Si, D. (2023). Protein Structure Refinement via DeepTracer and AlphaFold2. bioRxiv, 2023-08.</li>
+<li>Rahbar, Mahdi; Chauhan, Rahul Kumar; Shah, Pankil Nimeshbhai; Cao, Renzhi; Si, Dong; <u>Hou, Jie</u>; Deep graph learning to estimate protein model quality using structural constraints from multiple sequence alignments,Proceedings of the 13th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics,,,1-10,2022</li>
+<li>Hippe, Kyle; Lilley, Cade; William Berkenpas, Joshua; Chandana Pocha, Ciri; Kishaba, Kiyomi; Ding, Hui; <u>Hou, Jie</u>; Si, Dong; Cao, Renzhi; ZoomQA: residue-level protein model accuracy estimation with machine learning on sequential and 3D structural features,Briefings in bioinformatics,23,1,bbab384,2022,Oxford University Press</li>
+<li>Si, Dong; Nakamura, Andrew; Tang, Runbang; Guan, Haowen; <u>Hou, Jie</u>; Firozi, Ammaar; Cao, Renzhi; Hippe, Kyle; Zhao, Minglei; Artificial intelligence advances for de novo molecular structure modeling in cryo‐electron microscopy,Wiley Interdisciplinary Reviews: Computational Molecular Science,12,2,e1542,2022,Wiley Periodicals, Inc. Hoboken, USA</li>
+<li>Liu, Jian; Wu, Tianqi; Guo, Zhiye; <u>Hou, Jie</u>; Cheng, Jianlin; Improving protein tertiary structure prediction by deep learning and distance prediction in CASP14,Proteins: Structure, Function, and Bioinformatics,90,1,58-72,2022,John Wiley & Sons, Inc. Hoboken, USA</li>
+<li>Chen, Xiao; Liu, Jian; Guo, Zhiye; Wu, Tianqi; <u>Hou, Jie</u>; Cheng, Jianlin; Protein model accuracy estimation empowered by deep learning and inter-residue distance prediction in CASP14,Scientific Reports,11,1,1-12,2021,Nature Publishing Group</li>
+<li>Guo, Zhiye; Wu, Tianqi; Liu, Jian; <u>Hou, Jie</u>; Cheng, Jianlin; Improving deep learning-based protein distance prediction in CASP14,Bioinformatics,37,19,3190-3196,2021,Oxford University Press</li>
+<li>Lawson, Catherine L; Kryshtafovych, Andriy; Adams, Paul D; Afonine, Pavel V; Baker, Matthew L; Barad, Benjamin A; Bond, Paul; Burnley, Tom; Cao, Renzhi; Cheng, Jianlin; Cryo-EM model validation recommendations based on outcomes of the 2019 EMDataResource challenge,Nature methods,18,2,156-164,2021,Nature Publishing Group</li>
+<li>Wu, Tianqi; Guo, Zhiye; <u>Hou, Jie</u>; Cheng, Jianlin; DeepDist: real-value inter-residue distance prediction with deep residual convolutional network,BMC bioinformatics,22,1,1-17,2021,Springer</li>
+<li>Adhikari, Badri; Shrestha, Bikash; Bernardini, Matthew; <u>Hou, Jie</u>; Lea, Jamie; DISTEVAL: A web server for evaluating predicted protein distances,BMC bioinformatics,22,1,1-9,2021,BioMed Central</li>
+<li>Chen, Chen; <u>Hou, Jie</u>; Shi, Xiaowen; Yang, Hua; Birchler, James A; Cheng, Jianlin; DeepGRN: prediction of transcription factor binding site across cell-types using attention-based deep neural networks,BMC bioinformatics,22,1,1-18,2021,BioMed Central</li>
+<li>Wu, Tianqi; Guo, Zhiye; <u>Hou, Jie</u>; Cheng, Jianlin; DeepDist: real-value inter-residue distance prediction with deep residual convolutional network,BMC bioinformatics,22,1,1-17,2021,BioMed Central</li>
+<li>Guo, Zhiye; <u>Hou, Jie</u>; Cheng, Jianlin; DNSS2: improved ab initio protein secondary structure prediction using advanced deep learning architectures,Proteins: Structure, Function, and Bioinformatics,89,2,207-217,2021,John Wiley & Sons, Inc. Hoboken, USA</li>
+
+<li>Lawson, C. L., Kryshtafovych, A., Adams, P. D., Afonine, P., Baker, M. L., Barad, B. A., ..., Chiu, W. 
+Outcomes of the 2019 EMDataResource model challenge: validation of cryo-EM models at near-atomic resolution. Nature Methods, accepted, 2020.</li>
+<li><u>Hou J</u>, Adhikari B, Tanner JJ, Cheng J. SAXSDom: Modeling multidomain protein
+structures using small-angle X-ray scattering data. Proteins. 2020
+Jun;88(6):775-787. doi: 10.1002/prot.25865. Epub 2019 Dec 27. PMID: 31860156;
+PMCID: PMC7230021.</li>
+
+<li>Si D, Moritz SA, Pfab J, <u>Hou J</u>, Cao R, Wang L, Wu T, Cheng J. Deep Learning
+to Predict Protein Backbone Structure from High-Resolution Cryo-EM Density Maps.
+Sci Rep. 2020 Mar 9;10(1):4282. doi: 10.1038/s41598-020-60598-y. PMID: 32152330;
+PMCID: PMC7063051.</li>
+
+<li>Guo, Z., <u>Hou, J.</u>, Cheng, J. DNSS2: improved ab initio protein secondary structure 
+prediction using advanced deep learning architectures. Proteins: Structure, Function, and Bioinformatics. 2020.</li>
+
+<li>Wu T, <u>Hou J</u>, Adhikari B, Cheng J. Analysis of several key factors influencing
+deep learning-based inter-residue contact prediction. Bioinformatics. 2020 Feb
+15;36(4):1091-1098. doi: 10.1093/bioinformatics/btz679. PMID: 31504181.</li>
+
+<li>Zhou, Naihui, et al. The CAFA
+challenge reports improved protein function prediction and new functional
+annotations for hundreds of genes through experimental screens. Genome Biol.
+2019 Nov 19;20(1):244. doi: 10.1186/s13059-019-1835-8. PMID: 31744546; PMCID:
+PMC6864930.</li>
+
+<li>Lensink, Marc F., et al.  Blind
+prediction of homo- and hetero-protein complexes: The CASP13-CAPRI experiment.
+Proteins. 2019 Dec;87(12):1200-1221. doi: 10.1002/prot.25838. Epub 2019 Oct 25.
+PMID: 31612567; PMCID: PMC7274794.</li>
+
+<li><u>Hou J</u>, Wu T, Cao R, Cheng J. Protein tertiary structure modeling driven by
+deep learning and contact distance prediction in CASP13. Proteins. 2019
+Dec;87(12):1165-1178. doi: 10.1002/prot.25697. Epub 2019 Apr 25. PMID: 30985027;
+PMCID: PMC6800999.</li>
+
+<li>Keasar, Chen, et al. An analysis and evaluation of
+the WeFold collaborative for protein structure prediction and its pipelines in
+CASP11 and CASP12. Sci Rep. 2018 Jul 2;8(1):9939. doi:
+10.1038/s41598-018-26812-8. PMID: 29967418; PMCID: PMC6028396.</li>
+
+<li>Adhikari B, <u>Hou J</u>, Cheng J. DNCON2: improved protein contact prediction
+using two-level deep convolutional neural networks. Bioinformatics. 2018 May
+1;34(9):1466-1472. doi: 10.1093/bioinformatics/btx781. PMID: 29228185; PMCID:
+PMC5925776.</li>
+<li><u>Hou J</u>, Adhikari B, Cheng J. DeepSF: deep convolutional neural network for
+mapping protein sequences to folds. Bioinformatics. 2018 Apr 15;34(8):1295-1303.
+doi: 10.1093/bioinformatics/btx780. PMID: 29228193; PMCID: PMC5905591.</li>
+
+<li>Adhikari B, <u>Hou J</u>, Cheng J. Protein contact prediction by integrating deep
+multiple sequence alignments, coevolution and machine learning. Proteins. 2018
+Mar;86 Suppl 1(Suppl 1):84-96. doi: 10.1002/prot.25405. Epub 2017 Oct 31. PMID:
+29047157; PMCID: PMC5820155.</li>
+
+<li>Li H, <u>Hou J</u>, Adhikari B, Lyu Q, Cheng J. Deep learning methods for protein
+torsion angle prediction. BMC Bioinformatics. 2017 Sep 18;18(1):417. doi:
+10.1186/s12859-017-1834-2. PMID: 28923002; PMCID: PMC5604354.</li>
+
+<li>Adhikari B, Nowotny J, Bhattacharya D, <u>Hou J</u>, Cheng J. ConEVA: a toolbox for
+comprehensive assessment of protein contacts. BMC Bioinformatics. 2016 Dec
+7;17(1):517. doi: 10.1186/s12859-016-1404-z. PMID: 27923350; PMCID: PMC5142288.</li>
+
+<li>Jo T, <u>Hou J</u>, Eickholt J, Cheng J. Improving Protein Fold Recognition by Deep
+Learning Networks. Sci Rep. 2015 Dec 4;5:17573. doi: 10.1038/srep17573. PMID:
+26634993; PMCID: PMC4669437.</li>
+
+
+<br>
+<h4><b>Protein Quality Assessment</b></h4>
+<hr>
+<li>Zhang, L., Wang, S., <u>Hou, J.</u>, Si, D., Zhu, J., & Cao, R. (2023). ComplexQA: A deep graph learning approach for protein complex structure assessment. Briefings in Bioinformatics, 24(6), bbad287.</li>
+<li>Cheng J, Choe MH, Elofsson A, Han KS, <u>Hou J</u>, Maghrabi AHA, McGuffin LJ,
+Menendez-Hurtado D, Olechnovic K, Schwede T, Studer G, Uziela K, Venclovas C,
+Wallner B. Estimation of model accuracy in CASP13. Proteins. 2019
+Dec;87(12):1361-1377. doi: 10.1002/prot.25767. Epub 2019 Jul 16. PMID: 31265154;
+PMCID: PMC6851425.</li>
+
+<li>Cao R, Adhikari B, Bhattacharya D, Sun M, <u>Hou J</u>, Cheng J. QAcon: single
+model quality assessment using protein structural and contact information with
+machine learning techniques. Bioinformatics. 2017 Feb 15;33(4):586-588. doi:
+10.1093/bioinformatics/btw694. PMID: 28035027; PMCID: PMC6041872.</li>
+<li>Cao R, Bhattacharya D, <u>Hou J</u>, Cheng J. DeepQA: improving the estimation of
+single protein model quality with deep belief networks. BMC Bioinformatics. 2016
+Dec 5;17(1):495. doi: 10.1186/s12859-016-1405-y. PMID: 27919220; PMCID:
+PMC5139030.</li>
+
+
+<br>
+<h4><b><a name="omics_data_analysis">Omics Data Analysis</a></b></h4>
+
+									
+<hr>
+<li>Si, T., Hopkins, Z., Yanev, J., <u>Hou, J.</u>, & Gong, H. (2023). A novel f-divergence based generative adversarial imputation method for scRNA-seq data analysis. Plos one, 18(11), e0292792.</li>
+<li>Yang, H., Shi, X., Chen, C., <u>Hou, J.</u>, Ji, T., Cheng, J., & Birchler, J. A. (2023). Genomic imbalance modulates transposable element expression in maize. Plant Communications, 4(2).</li>
+<li>Shi, X., Yang, H., Chen, C., <u>Hou, J.</u>, Ji, T., Cheng, J., & Birchler, J. A. (2022). Dosage-sensitive miRNAs trigger modulation of gene expression during genomic imbalance in maize. Nature Communications, 13(1), 3014.</li>
+<li>Shi, X., Yang, H., Chen, C., <u>Hou, J.</u>, Ji, T., Cheng, J., & Birchler, J. A. (2022). Effect of aneuploidy of a non‐essential chromosome on gene expression in maize. The Plant Journal, 110(1), 193-211.</li>
+<li>Blavet, N., Yang, H., Su, H., Solanský, P., Douglas, R.N., Karafiátová, M., Šimková, L., Zhang, J., Liu, Y., Hou, J. and Shi, X., 2021. Sequence of the supernumerary B chromosome of maize provides insight into its drive mechanism and evolution. Proceedings of the National Academy of Sciences, 118(23), p.e2104254118.</li>
+<li>Shi, X., Yang, H., Chen, C., <u>Hou, J.</u>, Hanson, K. M., Albert, P. S., ... & Birchler, J. A. (2021). Genomic imbalance determines positive and negative modulation of gene expression in diploid maize. The Plant Cell, 33(4), 917-939.</li>
+<li>Yang, H., Shi, X., Chen, C., <u>Hou, J.</u>, Ji, T., Cheng, J., & Birchler, J. A. (2021). Predominantly inverse modulation of gene expression in genomically unbalanced disomic haploid maize. The Plant Cell, 33(4), 901-916.</li>
+
+
+<li>Chen C, Hou J, Tanner JJ, Cheng J. Bioinformatics methods for mass spectrometry-based proteomics data analysis. International Journal of Molecular Sciences. 21(8):2873, 2020.</li>
+
+<li>C. Chen, J. Hou, X. Shi, H. Yang, J.A. Birchler, and J. Cheng. GNET2: An R package 
+for constructing gene regulatory networks from transcriptomic data. Bioinformatics, 2020.</li>
+
+<li>Grunz-Borgmann, E. A., Nicholas, L. A., Spagnoli, S., Trzeciakowski, J. P., Valliyodan, 
+B., <u>Hou, J.</u>, Li, J, Cheng, J, ... Parrish, A. R. The renoprotective effects of soy 
+protein in the aging kidney. Medical Research Archives, 8(3), 2020.</li>
+
+<li>Jasmer KJ, <u>Hou J</u>, Mannino P, Cheng J, Hannink M. Heme oxygenase promotes
+B-Raf-dependent melanosphere formation. Pigment Cell Melanoma Res. 2020 Jun 17.
+doi: 10.1111/pcmr.12905. Epub ahead of print. PMID: 32558263.</li>
+
+<li>Johnson AF, <u>Hou J</u>, Yang H, Shi X, Chen C, Islam MS, Ji T, Cheng J, Birchler
+JA. Magnitude of modulation of gene expression in aneuploid maize depends on the
+extent of genomic imbalance. J Genet Genomics. 2020 Feb 20;47(2):93-103. doi:
+10.1016/j.jgg.2020.02.002. Epub 2020 Feb 19. PMID: 32178980.</li>
+
+<li>Shi X, Chen C, Yang H, <u>Hou J</u>, Ji T, Cheng J, Veitia RA, Birchler JA. The Gene
+Balance Hypothesis: Epigenetics and Dosage Effects in Plants. Methods Mol Biol.
+2020;2093:161-171. doi: 10.1007/978-1-0716-0179-2_12. PMID: 32088896.</li>
+
+<li>Bian Y, He C, <u>Hou J</u>, Cheng J, Qiu J. PairedFB: a full hierarchical Bayesian
+model for paired RNA-seq data with heterogeneous treatment effects.
+Bioinformatics. 2019 Mar 1;35(5):787-797. doi: 10.1093/bioinformatics/bty731.
+PMID: 30753300.</li>
+
+<li>Song H, Zhou H, Qu Z, <u>Hou J</u>, Chen W, Cai W, Cheng Q, Chuang DY, Chen S, Li
+S, Li J, Cheng J, Greenlief CM, Lu Y, Simonyi A, Sun GY, Wu C, Cui J, Gu Z. From
+Analysis of Ischemic Mouse Brain Proteome to Identification of Human Serum
+Clusterin as a Potential Biomarker for Severity of Acute Ischemic Stroke. Transl
+Stroke Res. 2019 Oct;10(5):546-556. doi: 10.1007/s12975-018-0675-2. Epub 2018
+Nov 21. PMID: 30465328.</li>
+
+<li><u>Hou J</u>, Shi X, Chen C, Islam MS, Johnson AF, Kanno T, Huettel B, Yen MR, Hsu
+FM, Ji T, Chen PY, Matzke M, Matzke AJM, Cheng J, Birchler JA. Global impacts of
+chromosomal imbalance on gene expression in <i>Arabidopsis</i> and other taxa.
+Proc Natl Acad Sci U S A. 2018 Nov 27;115(48):E11321-E11330. doi:
+10.1073/pnas.1807796115. Epub 2018 Nov 14. PMID: 30429332; PMCID: PMC6275517.</li>
+
+<li>Jiang L, Wan Y, Anderson JC, <u>Hou J</u>, Islam SM, Cheng J, Peck SC. Genetic
+dissection of Arabidopsis MAP kinase phosphatase 1-dependent PAMP-induced
+transcriptional responses. J Exp Bot. 2017 Nov 2;68(18):5207-5220. doi:
+10.1093/jxb/erx335. PMID: 29045691; PMCID: PMC5853853.</li>
+
+<li>Song H, Lu Y, Qu Z, Mossine VV, Martin MB, <u>Hou J</u>, Cui J, Peculis BA,
+Mawhinney TP, Cheng J, Greenlief CM, Fritsche K, Schmidt FJ, Walter RB, Lubahn
+DB, Sun GY, Gu Z. Effects of aged garlic extract and FruArg on gene expression
+and signaling pathways in lipopolysaccharide-activated microglial cells. Sci
+Rep. 2016 Oct 13;6:35323. doi: 10.1038/srep35323. PMID: 27734935; PMCID:
+PMC5062119.</li>
+
+<li><u>Hou J</u>, Acharya L, Zhu D, Cheng J. An overview of bioinformatics methods for
+modeling biological pathways in yeast. Brief Funct Genomics. 2016
+Mar;15(2):95-108. doi: 10.1093/bfgp/elv040. Epub 2015 Oct 17. PMID: 26476430;
+PMCID: PMC5065356.</li>
+
+<li><u>Hou J</u>, Stacey G, Cheng J. Exploring soybean metabolic pathways based on
+probabilistic graphical model and knowledge-based methods. EURASIP J Bioinform
+Syst Biol. 2015 Jun 20;2015:5. doi: 10.1186/s13637-015-0026-5. PMID: 28194174;
+PMCID: PMC5270328.</li>
+
+<li>Li J, <u>Hou J</u>, Sun L, Wilkins JM, Lu Y, Niederhuth CE, Merideth BR, Mawhinney
+TP, Mossine VV, Greenlief CM, Walker JC, Folk WR, Hannink M, Lubahn DB, Birchler
+JA, Cheng J. From Gigabyte to Kilobyte: A Bioinformatics Protocol for Mining
+Large RNA-Seq Transcriptomics Data. PLoS One. 2015 Apr 22;10(4):e0125000. doi:
+10.1371/journal.pone.0125000. PMID: 25902288; PMCID: PMC4406561.</li>
+
+
+
+<br>
+<h4><b><a name="privacy_ML">Privacy-preserving Machine Learning & other collaboration</a></b></h4>
+
+									
+<hr>
+<li>Dougherty, S., Kumar, A., <u>Hou, J.</u>, Tourani, R., & Tabakhi, A. M. (2023, October). A Stealthy Inference Attack on Split Learning with a Split-Fuse Defensive Measure. In 2023 IEEE Conference on Communications and Network Security (CNS) (pp. 1-9). IEEE.</li>
+<li>Yan, D., Azad, A., <u>Hou, J.</u>, Chen, J. Y., & Zaki, M. J. (2023, August). 22nd International Workshop on Data Mining in Bioinformatics (BIOKDD 2023). In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (pp. 5897-5898).</li>
+
+
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			
+
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-globe-outline"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="https://cs.slu.edu/~hou/#">jie.hou@slu.edu</a></p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-map"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>ISE 234G</p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="https://cs.slu.edu/~hou/tel://">314-977-6600</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+
+
+<!--
+<section class="colorlib-gallery" data-section="gallery">
+	<div class="colorlib-narrow-content">
+		
+		<div class="row">
+			<div class="gallery-container">
+				<button class="nav-btn prev" onclick="scrollGallery(-1)">&#10094;</button>
+				<div class="gallery-wrapper" id="gallery">
+					<div class="gallery-item" style="background-image: url('image1.jpg');"></div>
+					<div class="gallery-item" style="background-image: url('image2.jpg');"></div>
+					<div class="gallery-item" style="background-image: url('image3.jpg');"></div>
+					<div class="gallery-item" style="background-image: url('image4.jpg');"></div>
+					<div class="gallery-item" style="background-image: url('image5.jpg');"></div>
+				</div>
+				<button class="nav-btn next" onclick="scrollGallery(1)">&#10095;</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+    <script>
+        function scrollGallery(direction) {
+            const gallery = document.getElementById('gallery');
+            const scrollAmount = 300;
+            gallery.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+    </script>
+<!-->
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
