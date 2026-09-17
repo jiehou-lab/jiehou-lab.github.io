@@ -64,6 +64,21 @@
       box.classList.add('show');
     });
     box.addEventListener('click', function () { box.classList.remove('show'); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') box.classList.remove('show'); });
+
+    /* "More details" text pop-up */
+    var tb = document.createElement('div');
+    tb.className = 'textbox';
+    tb.innerHTML = '<div class="panel" role="dialog" aria-modal="true"><button class="close" aria-label="Close">&times;</button><h3></h3><div class="body"></div></div>';
+    document.body.appendChild(tb);
+    gal.addEventListener('click', function (e) {
+      var btn = e.target.closest('.more');
+      if (!btn) return;
+      var fig = btn.closest('figure'), det = fig.querySelector('.details');
+      tb.querySelector('h3').innerHTML = btn.getAttribute('data-title') || (fig.querySelector('figcaption') || {}).textContent || '';
+      tb.querySelector('.body').innerHTML = det ? det.innerHTML : '';
+      tb.classList.add('show');
+    });
+    tb.addEventListener('click', function (e) { if (e.target === tb || e.target.closest('.close')) tb.classList.remove('show'); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { box.classList.remove('show'); tb.classList.remove('show'); } });
   }
 })();

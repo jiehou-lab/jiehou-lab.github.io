@@ -7,7 +7,7 @@
   <meta name="description" content="Photo gallery of the Hou Lab.">
   <meta name="author" content="Jie Hou">
   <link rel="icon" href="images/msu_logo.png" type="image/png">
-  <link href="css/theme.css?v=202609170542" rel="stylesheet">
+  <link href="css/theme.css?v=202609170552" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -42,15 +42,33 @@
     <div class="page-header"><h2>Gallery</h2></div>
     <p class="lead">Moments from the lab: awards, grants, conferences, and team meetings. Click any image to enlarge.</p>
     <div class="gallery">
+      <figure>
+        <a href="images/sigmaxi_2026_autorna.jpg"><img src="images/sigmaxi_2026_autorna.jpg" alt="AutoRNA / ARSMA team at the 2026 Sigma Xi Research Symposium" loading="lazy"><figcaption>AutoRNA team presents ARSMA at the Sigma Xi 2026 Research Symposium, Saint Louis University (March 30, 2026)</figcaption></a>
+        <button class="more" type="button" data-title="Sigma Xi 2026 Research Symposium &mdash; March 30, 2026">More details</button>
+        <div class="details" hidden>
+          <p><b>Poster:</b> <i>AutoRNA: Incorporating a Fully Automated AI Agent into Various Advanced RNA Structural Analyses.</i> Rahul Jasthi, Vivek Shenoy, Ahmed Bektic, Ellen Nguyen, Brent M. Znosko, Reza Tourani, and Jie Hou.</p>
+          <p>Since the last poster presentation at the 2025 ACS Midwest Regional Meeting, AutoRNA has been integrated into a more comprehensive RNA structural analysis platform known as <b>ARSMA</b> (Analysis of RNA Structure and Motif Analysis). The purpose behind this new platform is still to improve our understanding of RNA structural motifs by increasing access to programming-intensive tools and analyses. However, improvements have been made to the overall tool. Beyond shipping the GUI, incorporation of the full CoSSMos workflow has been completed along with the incorporation of new tools like MotifFinder, MotifAlign, MotifCluster, MotifCharacterization, MotifRepCompare, MotifClade, and DSSRVisual. Each of these tools provides users access to novel functionality, including the abilities to extract individual motifs from a full RNA or RNA/protein complex, to categorize sets of RNA motifs into sequence families, and to compare different types of motifs.</p>
+          <p>Beyond this, the loose multi-agent setup has matured into a structured governance loop, where a Planner chooses an action, a Scientific Reviewer approves or rejects it, a Tool Selector calls the exact registered function, and an Executor runs it &mdash; all coordinated by an Interaction Hub and a Conversion Layer that refines user intent. Future work will focus on fine-tuning the agentic workflow, continued testing, and adding functions to complement the existing pipelines.</p>
+          <p class="muted">Supported by the SLU Foundational Interdisciplinary Research Experience (FIRE) program and NIH/NIGMS grant 1R15GM155891-01.</p>
+        </div>
+      </figure>
+      <figure>
+        <a href="images/acs_midwest_2025_autorna.jpg"><img src="images/acs_midwest_2025_autorna.jpg" alt="Rahul Jasthi presents the AutoRNA poster at the 2025 ACS Midwest Regional Meeting" loading="lazy"><figcaption>Rahul Jasthi presents AutoRNA at the 2025 ACS Midwest Regional Meeting (October 14, 2025)</figcaption></a>
+        <button class="more" type="button" data-title="2025 ACS Midwest Regional Meeting &mdash; October 14, 2025">More details</button>
+        <div class="details" hidden>
+          <p><b>Poster:</b> <i>AutoRNA: Advancing RNA motif structural analysis with a fully automated AI agent.</i> Rahul Jasthi, Ramez Mosad, Burhan Khan, Vivek Shenoy, Brent M. Znosko, and Jie Hou. Departments of Chemistry and Computer Science, Saint Louis University.</p>
+          <p>RNA is crucial to the Central Dogma of Biology as it plays a critical role in gene expression and protein synthesis, yet resolving RNA 3D structure experimentally remains slow, expensive, and technically punishing. While protein structure prediction has advanced significantly with the advent of models like AlphaFold, RNA structure prediction has lagged behind, held back by RNA&rsquo;s greater conformational flexibility, chemical complexity, and relative scarcity of high-resolution structural data. Improving our understanding of RNA structural motifs &mdash; recurring secondary and tertiary elements that govern folding and function &mdash; provides a promising path towards advancing RNA structure prediction, with far-reaching applications in drug discovery, synthetic biology, and personalized medicine. The problem is that motif analysis today demands intensive programming and computation, effectively gatekeeping the field from the students and smaller labs who could otherwise meaningfully contribute.</p>
+          <p>To address this, our group is developing <b>AutoRNA</b>, an AI agent that uses LLM reasoning to automate RNA motif analysis. Built on Microsoft&rsquo;s AutoGen framework, the agent runs on an autonomous multi-agent architecture where a User Proxy simply approves the plan and the agents handle the rest, keeping the pipeline largely self-driving. We have also designed it to be extensible, allowing us to add new tools by defining more functions and updating a config, with no retraining required. At this point, the team has implemented the &ldquo;Download and Clip .pdb files&rdquo; and &ldquo;Reorder Residues&rdquo; steps from the CoSSMos workflow as working functions. Future work includes translating the remaining steps from the CoSSMos workflow into agent functions, adding optional capabilities like report summarization and RMSD cutoff recommendations, and shipping a GUI so students can use the tool directly.</p>
+          <p class="muted">Financial support was provided by the SLU Foundational Interdisciplinary Research Experience (FIRE) Grant and the School of Science and Engineering Undergraduate Research Travel Award.</p>
+        </div>
+      </figure>
       <figure class="fit"><a href="images/nih-r01.jpg"><img src="images/nih-r01.jpg" alt="Dr. Brian Gage, Dr. Noor Al-Hammadi, and Dr. Jie Hou receive an NIH/NHLBI R01 grant (2024)" loading="lazy"><figcaption>Dr. Brian Gage, Dr. Noor Al-Hammadi, and Dr. Jie Hou receive an NIH/NHLBI R01 grant (2024)</figcaption></a></figure>
-      <figure class=""><a href="images/nsf-cc.jpeg"><img src="images/nsf-cc.jpeg" alt="The ModernCARE (NSF CC*) team at Saint Louis University (2024)" loading="lazy"><figcaption>The ModernCARE (NSF CC*) team at Saint Louis University (2024)</figcaption></a></figure>
       <figure class="fit"><a href="images/sse_nsf.png"><img src="images/sse_nsf.png" alt="SLU School of Science &amp; Engineering Researcher Spotlight on the NSF CC* award" loading="lazy"><figcaption>SLU School of Science &amp; Engineering Researcher Spotlight on the NSF CC* award</figcaption></a></figure>
       <figure class=""><a href="images/teaching2.jpeg"><img src="images/teaching2.jpeg" alt="Dr. Hou receives the SSE Excellence in Teaching Award (2024)" loading="lazy"><figcaption>Dr. Hou receives the SSE Excellence in Teaching Award (2024)</figcaption></a></figure>
       <figure class="fit"><a href="images/teaching.jpeg"><img src="images/teaching.jpeg" alt="2024 SSE Faculty &amp; Staff Awards, Saint Louis University" loading="lazy"><figcaption>2024 SSE Faculty &amp; Staff Awards, Saint Louis University</figcaption></a></figure>
       <figure class=""><a href="images/FIRE1.png"><img src="images/FIRE1.png" alt="FIRE undergraduate research team meeting on the AutoRNA project (2025)" loading="lazy"><figcaption>FIRE undergraduate research team meeting on the AutoRNA project (2025)</figcaption></a></figure>
       <figure class="fit"><a href="images/sigcse.png"><img src="images/sigcse.png" alt="ACM SIGCSE 2025 tutorial: Teaching Coding in the Age of AI" loading="lazy"><figcaption>ACM SIGCSE 2025 tutorial: Teaching Coding in the Age of AI</figcaption></a></figure>
       <figure class="fit"><a href="images/fttc_2.png"><img src="images/fttc_2.png" alt="FOCUS Teaching &amp; Technology Conference session on Process Feedback" loading="lazy"><figcaption>FOCUS Teaching &amp; Technology Conference session on Process Feedback</figcaption></a></figure>
-      <figure class="fit"><a href="images/ISTH.png"><img src="images/ISTH.png" alt="ISTH 2025 abstract acceptance: warfarin INR prediction algorithms" loading="lazy"><figcaption>ISTH 2025 abstract acceptance: warfarin INR prediction algorithms</figcaption></a></figure>
       <figure class=""><a href="images/slu_1.jpg"><img src="images/slu_1.jpg" alt="Saint Louis University campus, home of the lab 2019 &ndash; 2025" loading="lazy"><figcaption>Saint Louis University campus, home of the lab 2019 &ndash; 2025</figcaption></a></figure>
     </div>
 
@@ -91,6 +109,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=202609170542"></script>
+  <script src="js/main.js?v=202609170552"></script>
 </body>
 </html>

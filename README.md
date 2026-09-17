@@ -56,6 +56,9 @@ git push
   `first-last.jpg` into `images/people/` and the initials circle is replaced automatically.
 - **Publications**: each entry is a `<li>` in `publications.html`; add new ones at the top of
   the relevant topic list.
+- **Gallery**: each photo is a `<figure>` in `gallery.html`. To attach a long write-up, add inside the
+  figure a `<button class="more" data-title="…">More details</button>` followed by
+  `<div class="details" hidden>…</div>`; the button opens the text in a pop-up window.
 - **Highlight slideshow** on the home page is commented out in `index.html` — see the note there.
 - **Software page** (`software.html`) exists but is not in the nav; add
   `<li><a href="software.html">Software</a></li>` to the nav list in every page to show it.
