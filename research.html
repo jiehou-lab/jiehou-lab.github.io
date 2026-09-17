@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hou Lab &middot; Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research directions of the Hou Lab: protein and RNA structure prediction, structure quality assessment, omics and health analytics, AI agents, and grants.">
+  <meta name="author" content="Jie Hou">
+  <link rel="icon" href="images/msu_logo.png" type="image/png">
+  <link href="css/theme.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <header class="masthead">
+      <p class="univ"><a href="https://cmse.msu.edu/">Computational Mathematics, Science &amp; Engineering</a> &middot; <a href="https://msu.edu/">Michigan State University</a></p>
+      <h1><a href="index.html">Hou Lab</a></h1>
+      <p class="tagline">AI and machine learning for biomolecular structure, omics, and health</p>
+    </header>
+
+    <nav class="navbar" aria-label="Main">
+      <div class="nav-inner">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav">&#9776; Menu</button>
+        <ul id="mainnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="people.html">People</a></li>
+            <li class="active"><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="page">
+      <aside>
+        <ul class="sidenav">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#structure">Structure Prediction</a></li>
+          <li><a href="#data-assisted" class="sub">Data-assisted modeling</a></li>
+          <li><a href="#rna" class="sub">RNA motifs & AI-ready data</a></li>
+          <li><a href="#qa" class="sub">Quality assessment</a></li>
+          <li><a href="#omics">Omics & Health Analytics</a></li>
+          <li><a href="#warfarin" class="sub">Warfarin dosing</a></li>
+          <li><a href="#genomics" class="sub">Genomic imbalance</a></li>
+          <li><a href="#ai4sci">AI Agents, Security & Education</a></li>
+          <li><a href="#grants">Grants</a></li>
+          <li><a href="#awards">Honors & Awards</a></li>
+        </ul>
+      </aside>
+
+      <div>
+        <section id="overview">
+          <div class="page-header"><h2>Research</h2></div>
+          <p class="lead">We build data-driven computational methods &mdash; machine learning, deep learning, and computational optimization &mdash; for fundamental problems in the biological sciences.</p>
+          <p>Our work spans the prediction of protein and RNA three-dimensional structures, the modeling of molecular interactions such as protein&ndash;protein complexes and protein&ndash;RNA contacts, and the estimation of the quality of predicted structures. Beyond structural bioinformatics we collaborate broadly on healthcare analytics, privacy-preserving machine learning, and omics data analysis. A complete list of publications is available on the <a href="publications.html">Publications</a> page, in <a href="https://www.ncbi.nlm.nih.gov/myncbi/1JIwccmNQ5ygeJ/bibliography/public/">NCBI My Bibliography</a>, and on <a href="https://scholar.google.com/citations?user=RsC9b_wAAAAJ&hl=en">Google Scholar</a>.</p>
+        </section>
+
+        <section id="structure">
+          <div class="page-header"><h3>Protein &amp; RNA Structure Prediction and Quality Assessment</h3></div>
+
+          <section id="data-assisted" class="clearfix">
+            <h4>Data-assisted protein/RNA structure prediction</h4>
+            <p>Data-restrained structural modeling based on experimental information has attracted renewed attention, and robust solutions are still under development. Experimental restraints from cross-linking mass spectrometry, small-angle X-ray scattering (SAXS), and single-particle cryo-electron microscopy (cryo-EM) are a promising direction for improving structural models.</p>
+            <p>We develop computational methods (deep learning, machine learning, and optimization techniques) that determine how to best leverage SAXS and cryo-EM information in protein and RNA structure modeling. Earlier work by Dr. Hou in the CASP experiments &mdash; deep-learning contact/distance prediction (DNCON2, DeepDist), fold recognition (DeepSF), and contact-driven tertiary modeling &mdash; forms the foundation of this direction.</p>
+          <div class="keypapers">
+            <h5>Selected publications</h5>
+            <ul>
+            <li>Chen J, Zia A, Hou J, Wang F, Cao R, Si D. Protein structure refinement via DeepTracer and AlphaFold2. <i>Briefings in Bioinformatics</i>, 2023. <a href="https://www.biorxiv.org/content/10.1101/2023.08.16.553616v1.abstract">Link</a></li>
+            <li>Nakamura A, Meng H, Zhao M, Wang F, Hou J, Cao R, Si D. Fast and automated protein-DNA/RNA macromolecular complex modeling from cryo-EM maps. <i>Briefings in Bioinformatics</i> 24(2):bbac632, 2023. <a href="https://academic.oup.com/bib/article/24/2/bbac632/6995410">Link</a></li>
+            <li>Si D, Nakamura A, Tang R, Guan H, Hou J, Firozi A, et al. Artificial intelligence advances for de novo molecular structure modeling in cryo-electron microscopy. <i>WIREs Computational Molecular Science</i> 12(2):e1542, 2022. <a href="https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcms.1542">Link</a></li>
+            <li>Hou J, Adhikari B, Tanner JJ, Cheng J. SAXSDom: Modeling multidomain protein structures using small-angle X-ray scattering data. <i>Proteins</i> 88(6):775&ndash;787, 2020. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.25865">Link</a></li>
+            <li>Hou J, Wu T, Cao R, Cheng J. Protein tertiary structure modeling driven by deep learning and contact distance prediction in CASP13. <i>Proteins</i> 87(12):1165&ndash;1178, 2019. <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25697">Link</a></li>
+            </ul>
+          </div>
+          </section>
+
+          <section id="rna">
+            <h4>RNA motif structure and AI-ready data</h4>
+            <p>Supported by two NIH/NIGMS R15 awards, we are building a fully automated framework for parsing, annotating, and generating RNA motif structural data that is ready for AI and machine-learning applications. We combine this data engine with graph neural networks for RNA secondary-structure prediction and with structural-pattern mining of solved RNA 3D structures to derive updated thermodynamic parameters for common and modified RNA motifs (with Dr. Brent Znosko, SLU Chemistry).</p>
+            <p>Most recently, undergraduate researchers in the lab have been developing <b>AutoRNA</b>, an AI agent built on open-source large language models that automates RNA motif analysis end to end (<a href="images/AutoRNA_poster.pdf">poster, 2025 SSE Undergraduate Student Showcase</a>).</p>
+          </section>
+
+          <section id="qa">
+            <h4>Protein structure quality assessment</h4>
+          <p>Quality assessment (QA) evaluates the accuracy of a predicted protein model without knowing its true structure, and is an essential component of every structure-prediction pipeline. We develop deep-learning QA methods &mdash; including deep graph learning that integrates structural constraints from multiple sequence alignments and residue&ndash;residue contact/distance predictions &mdash; for both single-chain proteins and protein complexes. Dr. Hou's QA approach was ranked first in model ranking in the 13th CASP experiment (2018).</p>
+          <div class="keypapers">
+            <h5>Selected publications</h5>
+            <ul>
+            <li>Zhang L, Wang S, Hou J, Si D, Zhu J, Cao R. ComplexQA: A deep graph learning approach for protein complex structure assessment. <i>Briefings in Bioinformatics</i> 24(6):bbad287, 2023. <a href="https://academic.oup.com/bib/article/24/6/bbad287/7334440">Link</a></li>
+            <li>Rahbar M, Chauhan RK, Shah PN, Cao R, Si D, Hou J. Deep graph learning to estimate protein model quality using structural constraints from multiple sequence alignments. <i>ACM-BCB</i>, 2022. <a href="https://dl.acm.org/doi/abs/10.1145/3535508.3545558">Link</a></li>
+            <li>Cheng J, Choe MH, Elofsson A, Han KS, Hou J, et al. Estimation of model accuracy in CASP13. <i>Proteins</i> 87(12):1361&ndash;1377, 2019. <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25767">Link</a></li>
+            <li>Cao R, Bhattacharya D, Hou J, Cheng J. DeepQA: improving the estimation of single protein model quality with deep belief networks. <i>BMC Bioinformatics</i> 17:495, 2016.</li>
+            </ul>
+          </div>
+          </section>
+        </section>
+
+        <section id="omics">
+          <div class="page-header"><h3>Omics &amp; Health Data Analytics</h3></div>
+
+          <section id="warfarin">
+            <h4>Machine learning for warfarin dosing</h4>
+            <p>In collaboration with Dr. Brian Gage (Washington University School of Medicine), and supported by an NIH/NHLBI R01, we develop penalized-regression and machine-learning algorithms to guide anticoagulant (warfarin) dosing and to predict the International Normalized Ratio (INR) over long-term therapy. Our role centers on quantifying the dose&ndash;response relationship, validating the algorithms, and deploying them through the Epic electronic health record and the non-profit web application <a href="http://www.warfarindosing.org">WarfarinDosing.org</a>.</p>
+          </section>
+
+          <section id="genomics">
+            <h4>Gene regulation and genomic imbalance</h4>
+            <p>With Dr. James Birchler and Dr. Jianlin Cheng (University of Missouri), we study how genomic imbalance (aneuploidy, dosage changes) modulates gene expression in maize and Arabidopsis, and we build tools such as <b>GNET2</b> for constructing gene regulatory networks from transcriptomic data. We also collaborate on single-cell RNA-seq imputation, proteomics data analysis, and biomarker discovery.</p>
+          <div class="keypapers">
+            <h5>Selected publications</h5>
+            <ul>
+            <li>Shi X, Yang H, Chen C, Hou J, Ji T, Cheng J, Birchler JA. Dosage-sensitive miRNAs trigger modulation of gene expression during genomic imbalance in maize. <i>Nature Communications</i> 13:3014, 2022.</li>
+            <li>Blavet N, Yang H, Su H, et al., Hou J, Shi X. Sequence of the supernumerary B chromosome of maize provides insight into its drive mechanism and evolution. <i>PNAS</i> 118(23):e2104254118, 2021.</li>
+            <li>Hou J, Shi X, Chen C, et al., Cheng J, Birchler JA. Global impacts of chromosomal imbalance on gene expression in Arabidopsis and other taxa. <i>PNAS</i> 115(48):E11321&ndash;E11330, 2018.</li>
+            <li>Chen C, Hou J, Shi X, Yang H, Birchler JA, Cheng J. GNET2: An R package for constructing gene regulatory networks from transcriptomic data. <i>Bioinformatics</i>, 2020.</li>
+            </ul>
+          </div>
+          </section>
+        </section>
+
+        <section id="ai4sci">
+          <div class="page-header"><h3>AI Agents, Research Security, Privacy &amp; AI in Education</h3></div>
+          <p><b>AI agents for science.</b> We are exploring how open-source large language models can drive autonomous agents that plan and execute structural-bioinformatics analyses, starting with automated RNA motif analysis (AutoRNA).</p>
+          <p><b>Research security and scientific integrity in AI-driven biology.</b> Modern biological AI pipelines depend on externally sourced datasets, reference databases, and reusable pretrained models of often unverified origin. Supported by an NSF EAGER award (2026), we are mapping where these dependencies enter biological workflows, scoring the risk of each dependency pathway, and running controlled adversarial experiments (starting with soil metagenomics) to measure how integrity failures propagate to scientific conclusions and whether standard validation practices detect them.</p>
+          <p><b>Urban AI.</b> With Dr. Si Chen (MSU School of Planning, Design and Construction), and supported by an MSU AI Ready Spartans Innovation Grant, we are building <a href="https://jiehou-lab.github.io/urban-ai/">Urban AI</a>, a non-credit learning experience that lets students from any major use AI-driven decision-support tools on real urban challenges.</p>
+          <p><b>Privacy-preserving machine learning.</b> With Dr. Reza Tourani (SLU), we analyzed inference attacks on split learning and proposed the Split-Fuse defensive measure (IEEE CNS 2023).</p>
+          <p><b>AI in education (AI4Ed).</b> Dr. Hou integrates <a href="https://processfeedback.org/">ProcessFeedback</a> and LLM-based tools into computational courses to strengthen engagement and academic integrity. This work was presented as a tutorial at ACM SIGCSE 2025 (<a href="https://dl.acm.org/doi/abs/10.1145/3641555.3704753">paper</a>, <a href="https://badriadhikari.github.io/pf-online-compiler-workshop/">workshop materials</a>) and at the FOCUS Teaching &amp; Technology Conference. Acknowledgement: Dr. Badri Adhikari (University of Missouri&ndash;St. Louis), founder of ProcessFeedback.</p>
+          <div class="keypapers">
+            <h5>Selected publications</h5>
+            <ul>
+            <li>Adhikari B, Hou J. Teaching Coding in the Age of AI: A Hands-on Tutorial on Process Feedback. <i>Proc. 56th ACM Technical Symposium on Computer Science Education (SIGCSE TS)</i> V.2, 2025. <a href="https://dl.acm.org/doi/abs/10.1145/3641555.3704753">Link</a></li>
+            <li>Dougherty S, Kumar A, Hou J, Tourani R, Tabakhi AM. A stealthy inference attack on split learning with a Split-Fuse defensive measure. <i>IEEE Conference on Communications and Network Security (CNS)</i>, 2023.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="grants">
+          <div class="page-header"><h3>Grants</h3></div>
+
+          <div class="grant" id="grant-nsf-eager">
+            <img class="logo" src="images/NSF-Symbol.png" alt="NSF">
+            <div>
+              <h4>Collaborative Research: EAGER: Unveiling Security Risks to Scientific Integrity in AI-Driven Biological Discovery</h4>
+              <div class="meta"><span class="badge active">Active</span> <span class="badge pi">PI (MSU)</span> NSF EAGER &middot; awarded 08/2026 &middot; <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2628291">Award 2628291</a></div>
+              <p><b>Major goals:</b> characterize how externally sourced digital resources &mdash; datasets, annotations, metadata, software, and pretrained models &mdash; enter biological AI workflows; identify gaps in provenance verification; and quantify how resource-integrity failures alter downstream scientific conclusions.</p>
+              <p><b>Approach:</b> practitioner surveys and interviews build a provenance-to-interpretation graph and a pathway-level risk-scoring framework; adversarial integrity experiments on a soil-metagenomic workflow (with cross-domain validation in plant phenotyping, crop genomics, and environmental monitoring) measure how far controlled perturbations propagate and whether current validation practices catch them. The project also trains graduate and undergraduate students at the intersection of cybersecurity and biology.</p>
+            </div>
+          </div>
+
+          <div class="grant" id="grant-urban-ai">
+            <img class="logo" src="images/msu_logo.png" alt="Michigan State University">
+            <div>
+              <h4>Urban AI: AI-Driven Decision Support for Real-World Urban Challenges</h4>
+              <div class="meta"><span class="badge active">Active</span> <span class="badge">co-PI</span> MSU AI Ready Spartans Innovation Grant (Category 3: non-credit learning experience) &middot; 06/2026 &middot; PI: Dr. Si Chen (Urban &amp; Regional Planning, School of Planning, Design and Construction) &middot; <a href="https://jiehou-lab.github.io/urban-ai/">Course page</a></div>
+              <p><b>Major goals:</b> develop a scalable 20-hour online learning experience that introduces MSU students from all majors to AI-driven decision-support systems for urban planning &mdash; computer vision for satellite and street-view imagery, text mining of geolocated public comments, and LLM agents for scenario analysis and stakeholder engagement &mdash; with responsible AI use, human oversight, and equity at the center. Target: 500+ students per year in 10&ndash;12 cohorts.</p>
+              <p><b>Scope of work:</b> Dr. Hou designs the AI/ML technical components, selects and configures accessible no-code decision-support tools, and ensures the AI workflows are usable by students without programming backgrounds.</p>
+            </div>
+          </div>
+
+          <div class="grant" id="grant-nih-gm155891">
+            <img class="logo" src="images/nigms.jpeg" alt="NIH NIGMS">
+            <div>
+              <h4>Improving Artificial Intelligence Readiness of RNA Motif Data for Structure Analysis and Modeling</h4>
+              <div class="meta"><span class="badge active">Active</span> <span class="badge pi">PI</span> NIH/NIGMS R15 &middot; 09/2024 &ndash; 08/2027 &middot; previously lead PI at Saint Louis University &middot; <a href="https://reporter.nih.gov/search/zvUKGxxYiE-pvu_ZoL72_g/project-details/10974883">1R15GM155891-01</a></div>
+              <p><b>Major goals:</b> enhance computational RNA structural analysis by integrating AI and developing a comprehensive RNA data generation framework tailored for AI applications.</p>
+            </div>
+          </div>
+
+          <div class="grant" id="grant-nih-gm085699">
+            <img class="logo" src="images/nigms.jpeg" alt="NIH NIGMS">
+            <div>
+              <h4>Understanding the Thermodynamics and Structure of RNA Secondary Structure Motifs</h4>
+              <div class="meta"><span class="badge active">Active</span> <span class="badge">co-I</span> NIH/NIGMS R15 &middot; 07/2025 &ndash; 06/2028 &middot; PI: Dr. Brent Znosko (SLU Chemistry) &middot; <a href="https://reporter.nih.gov/search/LX7hyZif-EKCt8G8zMpqiQ/project-details/11125115">2R15GM085699-05</a></div>
+              <p><b>Major goals:</b> improve RNA secondary and 3D structure prediction by deriving updated thermodynamic parameters for common and modified RNA motifs and enhancing computational tools for structural analysis.</p>
+              <p><b>Scope of work:</b> major role in developing bioinformatics algorithms to identify structural patterns in previously solved RNA 3D structures to improve 3D structure prediction.</p>
+            </div>
+          </div>
+
+          <div class="grant" id="grant-nih-hl173734">
+            <img class="logo" src="images/nhlbi.jpg" alt="NIH NHLBI">
+            <div>
+              <h4>Pharmacogenetic Refinement of the Warfarin Dose Using Machine Learning</h4>
+              <div class="meta"><span class="badge active">Active</span> <span class="badge">co-I</span> NIH/NHLBI R01 &middot; 07/2024 &ndash; 06/2028 &middot; PI: Dr. Brian Gage (WUSTL School of Medicine) &middot; <a href="https://reporter.nih.gov/search/tB5fVTNOX0O88IYMmgDqmw/project-details/10862482">1R01HL173734-01</a></div>
+              <p><b>Major goals:</b> improve the safety and effectiveness of anticoagulant therapy using penalized regression and machine learning to guide warfarin dosing, integrated into the Epic electronic health record and made publicly available at <a href="http://www.warfarindosing.org">WarfarinDosing.org</a>.</p>
+              <p><b>Scope of work:</b> major role in developing an advanced machine-learning framework to quantify the long-term warfarin dose&ndash;response relationship; algorithm validation and deployment via Epic.</p>
+            </div>
+          </div>
+
+          <div class="grant" id="grant-nsf-cc">
+            <img class="logo" src="images/NSF-Symbol.png" alt="NSF">
+            <div>
+              <h4>CC* Compute-Campus: Modernizing Campus Cyberinfrastructure for AI-Enhanced Research and Education (ModernCARE)</h4>
+              <div class="meta"><span class="badge active">Active</span> <span class="badge">co-PI</span> NSF &middot; 11/2024 &ndash; 10/2026 &middot; PI: Dr. Ted Ahn (SLU CS) &middot; <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2430236&HistoricalAwards=false">2430236</a></div>
+              <p><b>Major goals:</b> enhance SLU's campus computing infrastructure with a new university-wide GPU-based cluster supporting AI-driven research and education.</p>
+              <p><b>Scope of work:</b> HPC training workshops and seminars, leading the bioinformatics/AI sub-session, validating the system on AI-driven molecular structure prediction, and incorporating the environment into new machine-learning and bioinformatics courses.</p>
+            </div>
+          </div>
+
+          <div class="grant" id="grant-slu-surge">
+            <img class="logo" src="images/SLU_Logo.png" alt="Saint Louis University">
+            <div>
+              <h4>SLU Scholarly Undergraduate Research Grants and Experiences (SURGE)</h4>
+              <div class="meta"><span class="badge pi">PI</span> Internal undergraduate research awards</div>
+              <p><span class="badge active">Active</span> &ldquo;AI agent for automated RNA motif analysis using open-source large language models (LLMs),&rdquo; 08/2025 &ndash; 06/2026 (<a href="https://slu.joinhandshake.com/jobs/9741688/share_preview">position details</a>)</p>
+              <p><span class="badge">Completed</span> &ldquo;Automated RNA Motif Structure Parsing Framework for AI/ML applications,&rdquo; 08/2024 &ndash; 12/2024</p>
+              <p><span class="badge">Completed</span> &ldquo;Computational algorithms for binding affinity between antibodies and antigens,&rdquo; 05/2023 &ndash; 09/2023</p>
+            </div>
+          </div>
+
+          <div class="grant" id="grant-slu-fire">
+            <img class="logo" src="images/SLU_Logo.png" alt="Saint Louis University">
+            <div>
+              <h4>SLU Foundational Interdisciplinary Research Experience (FIRE)</h4>
+              <div class="meta"><span class="badge active">Active</span> <span class="badge pi">PI</span> 01/2025 &ndash; 12/2026</div>
+              <p>&ldquo;Advancing RNA Motif Structural Analysis with a Fully Automated AI Agent.&rdquo; See the team's <a href="images/AutoRNA_poster.pdf">AutoRNA poster</a> from the 2025 SSE Undergraduate Student Showcase.</p>
+            </div>
+          </div>
+
+          <div class="grant" id="grant-earlier">
+            <img class="logo" src="images/SLU_Logo.png" alt="Saint Louis University">
+            <div>
+              <h4>Earlier internal awards</h4>
+              <div class="meta"><span class="badge">Completed</span></div>
+              <p>SLU President's Research Fund (co-PI): privacy analysis of distributed learning with a defensive measure, 05/2022 &ndash; 04/2023.</p>
+              <p>WUSTL ICTS/CTRFP (co-PI): machine-learning algorithms for pharmacogenetic refinement of warfarin dose, 03/2022 &ndash; 02/2023.</p>
+              <p>SLU President's Research Fund (PI): deep-learning algorithms for protein structure prediction, 05/2021 &ndash; 11/2022.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="awards">
+          <div class="page-header"><h3>Honors &amp; Awards</h3></div>
+          <ul class="checklist">
+            <li><b>2024</b> &mdash; Faculty and Staff Excellence in Teaching Award, School of Science &amp; Engineering, Saint Louis University</li>
+            <li><b>2019</b> &mdash; Outstanding PhD Student Award, College of Engineering, University of Missouri</li>
+            <li><b>2018</b> &mdash; Quality-assessment method ranked No. 1 in ranking protein structural models, 13th Critical Assessment of protein Structure Prediction (CASP13)</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="cols">
+        <div>
+          <h3>Contact</h3>
+          <p><b>Dr. Jie Hou</b>, Assistant Professor</p>
+          <p>Department of Computational Mathematics, Science and Engineering (CMSE)</p>
+          <p>Michigan State University, East Lansing, MI 48824</p>
+          <p><b>Office:</b> CMSE 2502 &nbsp;&middot;&nbsp; <b>Email:</b> <a href="mailto:houjie@msu.edu">houjie@msu.edu</a></p>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <ul>
+            <li><a href="https://scholar.google.com/citations?user=RsC9b_wAAAAJ&hl=en">Google Scholar</a></li>
+            <li><a href="https://www.ncbi.nlm.nih.gov/myncbi/1JIwccmNQ5ygeJ/bibliography/public/">NCBI My Bibliography</a></li>
+            <li><a href="https://github.com/jiehou-lab">GitHub</a></li>
+            <li><a href="cv/CV_Jan2026.pdf">Curriculum Vitae (PDF)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Affiliations</h3>
+          <ul>
+            <li><a href="https://cmse.msu.edu/">Department of CMSE</a></li>
+            <li><a href="https://natsci.msu.edu/">College of Natural Science</a></li>
+            <li><a href="https://msu.edu/">Michigan State University</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fine">
+        <span>&copy; 2019&ndash;2026 Jie Hou. All rights reserved.</span>
+        <span class="logos"><img src="images/msu_logo.png" alt="Michigan State University"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

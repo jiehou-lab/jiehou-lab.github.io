@@ -1,0 +1,10 @@
+/* Option B — Classic Burgundy: deep red accents, light warm-gray nav */
+:root {
+  --accent: #7a1f2b; --accent-2: #a2384a;
+  --nav-top: #faf7f5; --nav-bottom: #efe9e6; --nav-text: #3d2b2e;
+  --nav-divider: rgba(0,0,0,.08); --nav-hover: rgba(122,31,43,.08);
+  --nav-active-bg: #7a1f2b; --nav-active-text: #fff; --nav-border: #d9cfcb;
+  --panel: #f8f5f3; --panel-2: #eee7e3; --rule: #dfd6d1; --page-bg: #fffdfb;
+}
+.badge.pi, .tag.paper { background: #f1e0e2; color: #7a1f2b; }
+.stat b, .publist .year { color: #7a1f2b; }

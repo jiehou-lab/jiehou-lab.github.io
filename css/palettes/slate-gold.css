@@ -1,0 +1,11 @@
+/* Option E — Slate & Gold: dark slate nav with a gold active marker, warm ivory page */
+:root {
+  --accent: #23405e; --accent-2: #3d6288;
+  --nav-top: #2f3e50; --nav-bottom: #243140; --nav-text: #e9edf2;
+  --nav-divider: rgba(255,255,255,.12); --nav-hover: rgba(255,255,255,.08);
+  --nav-active-bg: rgba(0,0,0,.25); --nav-active-text: #f5d38a;
+  --panel: #f7f5f0; --panel-2: #ece8df; --rule: #ddd8cd; --page-bg: #fdfcf9;
+}
+.navbar li.active a { box-shadow: inset 0 -3px 0 #c9a54e; }
+.section-title::before, .section-title::after, .page-header { border-color: #d8c9a3; }
+.badge.pi, .tag.paper { background: #f3ead3; color: #7a5a12; }

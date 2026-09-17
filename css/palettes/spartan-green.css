@@ -1,0 +1,10 @@
+/* Option A — Spartan Green (now the default in theme.css; this file is kept for reference) */
+:root {
+  --accent: #18453B; --accent-2: #2b6b5c;
+  --nav-top: #1f5a4c; --nav-bottom: #18453B; --nav-text: #e6efec;
+  --nav-divider: rgba(255,255,255,.16); --nav-hover: rgba(255,255,255,.10);
+  --nav-active-bg: rgba(0,0,0,.30); --nav-active-text: #fff;
+  --panel: #f3f6f4; --panel-2: #e4ebe7; --rule: #d5ddd8;
+}
+.badge.active, .tag.fund { background: #dcefe3; color: #1e6b3a; }
+.badge.pi, .tag.paper { background: #e1ebe8; color: #18453B; }

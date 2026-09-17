@@ -1,0 +1,9 @@
+/* Option C — Ocean Blue: bright blue nav, clean white page */
+:root {
+  --accent: #0b4f8a; --accent-2: #1a6fb5;
+  --nav-top: #1a6fb5; --nav-bottom: #0b4f8a; --nav-text: #eaf2fb;
+  --nav-divider: rgba(255,255,255,.18); --nav-hover: rgba(255,255,255,.12);
+  --nav-active-bg: rgba(0,0,0,.26); --nav-active-text: #fff;
+  --panel: #f2f6fa; --panel-2: #e3ecf5; --rule: #d4dfe9;
+}
+.badge.pi, .tag.paper { background: #dfeaf6; color: #0b4f8a; }

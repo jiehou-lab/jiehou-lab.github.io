@@ -1,0 +1,14 @@
+/* Option D — Minimal Light: white nav with a thin rule, teal accent, near-black text */
+:root {
+  --accent: #0f6e6a; --accent-2: #17908b; --ink: #1a1f24;
+  --nav-top: #ffffff; --nav-bottom: #ffffff; --nav-text: #2c3339;
+  --nav-divider: transparent; --nav-hover: #f0f4f4;
+  --nav-active-bg: transparent; --nav-active-text: #0f6e6a; --nav-border: #e2e6ea;
+  --panel: #f6f8f8; --panel-2: #e9eeee; --rule: #e2e6ea;
+}
+.navbar .nav-inner { box-shadow: none; border-radius: 0; border-left: 0; border-right: 0; }
+.navbar li a { font-weight: 600; }
+.navbar li.active a { box-shadow: inset 0 -3px 0 #0f6e6a; }
+h1, h2, h3, h4, h5 { font-family: var(--sans); font-weight: 700; letter-spacing: -.01em; }
+.masthead .tagline { font-family: var(--sans); font-style: normal; }
+.badge.pi, .tag.paper { background: #dcefee; color: #0f6e6a; }
