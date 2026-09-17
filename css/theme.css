@@ -66,12 +66,18 @@ small, .muted { color: var(--ink-mute); }
 /* --------------------------------------------------------------------------
    Masthead
    -------------------------------------------------------------------------- */
-.masthead { text-align: center; padding: 10px 0 18px; }
-.masthead .univ { font-family: var(--sans); font-size: 1rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 6px; }
+.masthead { display: grid; grid-template-columns: 150px 1fr 150px; align-items: center; gap: 16px; text-align: center; padding: 6px 0 18px; }
+.masthead .logo { display: block; }
+.masthead .logo img { height: 92px; width: auto; max-width: none; display: block; }
+.masthead .logo-left { justify-self: start; }
+.masthead .logo-right { justify-self: end; }
+.masthead .univ { font-family: var(--sans); font-size: .86rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 6px; }
 .masthead .univ a { color: inherit; }
 .masthead h1 { font-size: 2.6rem; margin: 0; letter-spacing: .01em; }
 .masthead h1 a { color: var(--accent); text-decoration: none; }
 .masthead .tagline { font-family: var(--serif); font-style: italic; color: var(--ink-soft); margin: 6px 0 0; font-size: 1.05rem; }
+@media (max-width: 900px) { .masthead { grid-template-columns: 110px 1fr 110px; } .masthead .logo img { height: 64px; } .masthead .univ { font-size: .8rem; letter-spacing: .08em; } }
+@media (max-width: 640px) { .masthead { grid-template-columns: 1fr; } .masthead .logo { display: none; } }
 
 /* --------------------------------------------------------------------------
    Navigation — one full-width bar, cells divided by hairlines
@@ -134,6 +140,10 @@ small, .muted { color: var(--ink-mute); }
 .intro.wide { grid-template-columns: 1fr 340px; }
 .intro.halves { grid-template-columns: 1fr 1fr; gap: 32px; }
 @media (max-width: 700px) { .intro, .intro.wide, .intro.halves { grid-template-columns: 1fr; } .intro .portrait { max-width: 300px; margin: 0 auto; } }
+
+.pi-card { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 20px 28px; margin: 22px 0 6px; padding: 16px 20px; background: var(--panel); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 4px; font-size: .92rem; line-height: 1.55; color: var(--ink-soft); }
+.pi-card b { color: var(--ink); }
+@media (max-width: 800px) { .pi-card { grid-template-columns: 1fr; gap: 10px; } }
 
 .section-title { display: flex; align-items: center; gap: 16px; margin: 28px 0 18px; }
 .section-title::before, .section-title::after { content: ""; flex: 1; border-top: 1px solid var(--rule); }
