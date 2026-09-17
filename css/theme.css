@@ -128,7 +128,7 @@ small, .muted { color: var(--ink-mute); }
 /* --------------------------------------------------------------------------
    Home page blocks
    -------------------------------------------------------------------------- */
-.intro { display: grid; grid-template-columns: 1fr 320px; gap: 32px; align-items: start; }
+.intro { display: grid; grid-template-columns: 1fr 240px; gap: 32px; align-items: start; }
 .intro .portrait img { width: 100%; border-radius: 4px; border: 1px solid var(--rule); }
 .intro .portrait figcaption { text-align: center; font-size: .9rem; color: var(--ink-soft); margin-top: 6px; }
 .intro.wide { grid-template-columns: 1fr 340px; }
