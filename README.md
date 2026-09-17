@@ -77,3 +77,13 @@ git push
   as needed. Each entry is a plain `<li>` — add new papers at the top of the relevant list.
 - **Images** — `images/jie_hou.jpg` is a cropped version of `hou_zoom.png` (black border
   removed). Replace with a newer portrait if you like.
+
+## Cache busting
+
+`css/theme.css` and `js/main.js` are referenced with a `?v=YYYYMMDDHHMM` query string in
+every page. After editing either file, bump the number in all pages so browsers and the
+GitHub Pages CDN fetch the new version:
+
+```bash
+V=$(date +%Y%m%d%H%M); sed -i '' -E "s/(theme\.css|main\.js)\?v=[0-9]+/\1?v=$V/g" *.html
+```
