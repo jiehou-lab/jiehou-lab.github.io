@@ -214,6 +214,9 @@ section + section { margin-top: 36px; }
 .roster .name { font-weight: 600; }
 .roster .meta { color: var(--ink-soft); font-size: .92rem; }
 .roster .now { color: var(--ink-mute); font-size: .9rem; text-align: right; max-width: 45%; }
+.roster .bio { margin: 6px 0 0; font-size: .9rem; line-height: 1.55; color: var(--ink); max-width: 62ch; }
+.roster li:has(.bio) { align-items: start; }
+.roster li:has(.bio) .avatar { margin-top: 2px; }
 @media (max-width: 600px) { .roster li { grid-template-columns: 56px 1fr; } .roster .now { grid-column: 2; text-align: left; max-width: none; } }
 
 .scrollbox { max-height: 340px; overflow-y: auto; border: 1px solid var(--rule); border-radius: 4px; padding: 0 14px; background: #fff; }

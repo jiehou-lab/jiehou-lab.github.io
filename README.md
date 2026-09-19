@@ -52,7 +52,8 @@ git push
   `index.html` are edited separately.
 - **Grants**: each grant in `research.html` is a `<div class="grant" id="grant-…">` block; the
   home-page chips link to those ids.
-- **People**: add a `<li>` to the right roster in `people.html`; drop a square photo named
+- **People**: add a `<li>` to the right roster in `people.html`. For a short bio, add
+  `<p class="bio">…</p>` right after the `<span class="meta">…</span>` line (see Vincent Huang's entry). Drop a square photo named
   `first-last.jpg` into `images/people/` and the initials circle is replaced automatically.
 - **Publications**: each entry is a `<li>` in `publications.html`; add new ones at the top of
   the relevant topic list.
