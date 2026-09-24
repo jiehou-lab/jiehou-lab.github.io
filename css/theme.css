@@ -357,3 +357,10 @@ footer li { margin-bottom: 4px; }
 footer .fine { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--rule); font-size: .82rem; color: var(--ink-mute); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 footer .logos img { height: 64px; margin-right: 16px; vertical-align: middle; }
 @media (max-width: 700px) { footer .cols { grid-template-columns: 1fr; } }
+
+/* Narrow screens: keep course tables inside the viewport even with long URLs */
+@media (max-width: 700px) {
+  .courses { table-layout: fixed; }
+  .courses th, .courses td { overflow-wrap: anywhere; }
+  .courses td.code { white-space: normal; }
+}
